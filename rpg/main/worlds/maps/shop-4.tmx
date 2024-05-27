@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="30" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="45">
+ <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
+ <tileset firstgid="1001" source="../../spritesheets/slates.tsx"/>
+ <tileset firstgid="2289" source="../../spritesheets/Overworld.tsx"/>
+ <tileset firstgid="3729" source="coolschool_tileset.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="30" height="10">
+  <data encoding="csv">
+527,365,362,362,362,362,362,527,0,527,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,373,370,370,370,370,370,2684354914,0,1610613090,373,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,371,2684354914,
+1610613090,381,378,378,378,0,378,2684354914,0,1610613090,381,0,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,379,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,2684354914,0,1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+527,3221225826,3221225826,3221225826,291,291,3221225826,527,0,527,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,527
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="30" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2394,0,0,0,0,0,2394,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2394,0,0,
+0,0,0,0,0,2434,0,0,0,0,0,2434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2434,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="30" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,828,0,671,0,0,0,0,0,0,0,0,3747,3748,3749,3734,3734,3735,3747,3748,3749,629,0,0,0,0,0,
+0,0,0,0,836,0,0,0,0,0,0,0,0,885,886,3755,3756,3757,3742,3742,3743,3755,3756,3757,637,885,886,0,0,0,
+0,0,0,0,0,0,0,0,0,0,875,0,0,893,894,0,0,0,3750,3750,3751,0,0,0,858,893,894,0,0,0,
+0,0,0,0,677,0,0,0,0,0,0,0,0,901,902,3770,3771,0,3770,3771,0,3770,3771,0,0,901,902,0,0,0,
+0,678,679,679,695,0,0,0,0,0,0,0,0,0,0,3778,3779,0,3778,3779,0,3778,3779,0,0,885,886,0,0,0,
+0,0,0,0,0,0,0,0,0,0,883,884,0,893,894,3770,3771,0,3770,3771,0,3770,3771,0,0,893,894,0,0,0,
+0,873,0,0,0,0,0,0,0,0,891,892,0,901,902,3778,3779,0,3778,3779,0,3778,3779,0,0,901,902,0,0,0,
+0,0,0,0,0,0,0,0,0,0,899,900,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Object Layer 1">
+  <object id="1" name="Start Position" type="start" x="158.466" y="273.049">
+   <point/>
+  </object>
+  <object id="9" name="teleport" x="128.958" y="304.417" width="63.4167" height="16.5">
+   <properties>
+    <property name="destination" value="map"/>
+    <property name="direction" type="int" value="3"/>
+    <property name="x" type="int" value="113"/>
+    <property name="y" type="int" value="637"/>
+   </properties>
+  </object>
+  <object id="11" name="internal_door_1" x="165" y="75" width="21.5" height="19.5">
+   <properties>
+    <property name="direction" type="int" value="3"/>
+    <property name="x" type="int" value="360"/>
+    <property name="y" type="int" value="108"/>
+   </properties>
+  </object>
+  <object id="12" name="internal_door_2" x="356.75" y="75.25" width="21.5" height="19.5">
+   <properties>
+    <property name="direction" type="int" value="3"/>
+    <property name="x" type="int" value="167"/>
+    <property name="y" type="int" value="102"/>
+   </properties>
+  </object>
+  <object id="13" name="collide2" x="577" y="142" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="14" name="collide6" x="577.5" y="207" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="15" name="collide1" x="673.5" y="143" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="collide3" x="481.5" y="143" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="17" name="collide4" x="481" y="206.5" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="18" name="collide5" x="673" y="206.5" width="61" height="18">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="19" name="collide7" x="576" y="54.5" width="95" height="55">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="20" name="teleport2" x="868.292" y="52.25" width="23.4167" height="42">
+   <properties>
+    <property name="destination" value="map"/>
+    <property name="x" type="int" value="113"/>
+    <property name="y" type="int" value="637"/>
+   </properties>
+  </object>
+  <object id="24" name="computer-1" x="514" y="161.5" width="28" height="28.5"/>
+  <object id="25" name="computer-2" x="610" y="159.75" width="28" height="28.5"/>
+  <object id="26" name="computer-3" x="706" y="159.75" width="28" height="28.5"/>
+  <object id="27" name="computer-4" x="513.5" y="225.25" width="28" height="28.5"/>
+  <object id="28" name="computer-5" x="610.5" y="224.25" width="28" height="28.5"/>
+  <object id="29" name="computer-6" x="706.5" y="224.25" width="28" height="28.5"/>
+  <object id="32" name="collision-0001" x="26" y="288" width="108.667" height="6.66667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="33" name="collision-0004" x="32.3332" y="87" width="129.334" height="6.66667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="34" name="collision-0005" x="26.333" y="95.6667" width="7.334" height="190.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="35" name="collision-0006" x="225.333" y="94.6665" width="93.334" height="190.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="36" name="collision-0007" x="384.333" y="87.6665" width="481.334" height="5.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="37" name="collision-0014" x="186.333" y="287.166" width="748.334" height="5.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="38" name="collision-0008" x="189.333" y="87.3332" width="164.001" height="7.33367">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="39" name="collision-0009" x="931.333" y="88.1665" width="5.334" height="204.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="40" name="collision-0010" x="893.333" y="86.6665" width="37.334" height="7.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="41" name="collision-0012" x="326.333" y="230.666" width="52.334" height="54.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="42" name="collision-0011" x="420.333" y="95.6665" width="52.334" height="157.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="43" name="collision-0013" x="805.833" y="191.666" width="52.334" height="93.667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="44" name="collision-0014" x="803.833" y="94.1665" width="52.334" height="62.0003">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="4" name="Tile Layer 4" width="30" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,812,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,820,0,0,0,0,0,0,0,0,0,0,885,886,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,974,977,980,0,0,0,0,0,0,0,0,0,893,894,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,901,902,0,0,0,0,0,0,0,0,0,0,885,886,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,893,894,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,901,902,0,0,0,
+0,0,0,0,245,246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="6" name="lighting" width="30" height="10">
+  <data encoding="csv">
+251,251,251,251,251,251,251,251,0,251,251,251,251,251,251,2659,0,0,0,0,0,0,0,0,2147486307,251,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,2659,0,0,0,0,0,0,0,0,0,0,2147486307,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,1073744483,0,0,0,0,0,0,0,0,0,0,3221228502,251,251,251,251,
+251,0,0,0,991,0,0,251,0,251,251,251,251,251,3030,0,0,0,0,0,0,0,0,0,0,2147486678,251,251,251,251,
+251,0,0,0,999,0,0,251,0,251,251,251,251,251,3030,3820,3809,0,3814,3809,0,3821,3811,0,0,2147486678,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,3030,0,3806,0,0,3806,0,0,3806,0,0,2147486678,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,3030,3817,3809,0,3818,3809,0,3823,3812,0,0,2147486678,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,3030,0,3806,0,0,3806,0,0,3806,0,0,3221228502,251,251,251,251,
+251,0,0,0,0,0,0,251,0,251,251,251,251,251,1073744483,0,0,0,0,0,0,0,0,0,0,3221228131,251,251,251,251,
+251,251,251,251,0,0,251,251,0,251,251,251,251,251,251,1073744483,0,0,0,0,0,0,0,0,3221228131,251,251,251,251,251
+</data>
+ </layer>
+</map>

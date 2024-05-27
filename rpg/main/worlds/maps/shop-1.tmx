@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="8">
+ <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
+ <tileset firstgid="1001" source="../../spritesheets/slates.tsx"/>
+ <tileset firstgid="2289" source="../../spritesheets/Overworld.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+527,365,362,362,362,362,362,362,363,527,
+1610613090,373,370,370,370,370,370,370,371,2684354914,
+1610613090,381,378,378,378,378,378,378,379,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,291,291,2684354914,
+527,3221225826,3221225826,3221225826,291,291,3221225826,3221225826,3221225826,527
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,625,626,627,628,0,0,0,
+0,296,0,633,634,635,636,716,0,0,
+0,304,0,0,0,0,0,724,0,0,
+0,0,71,677,0,0,0,0,0,0,
+0,678,679,695,0,0,709,709,709,0,
+0,0,885,886,0,0,0,0,0,0,
+0,0,893,894,0,0,709,709,709,0,
+0,0,901,902,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Object Layer 1">
+  <object id="1" name="Start Position" type="start" x="160.466" y="266.382">
+   <point/>
+  </object>
+  <object id="6" name="teleport1" x="128.625" y="304.75" width="63.4167" height="15.1667">
+   <properties>
+    <property name="destination" value="map"/>
+    <property name="x" type="int" value="273"/>
+    <property name="y" type="int" value="378"/>
+   </properties>
+  </object>
+  <object id="7" name="teleport" x="31.9583" y="95.75" width="32.0834" height="15.8333">
+   <properties>
+    <property name="destination" value="cellar-1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="4" name="Tile Layer 4" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,986,988,953,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,981,973,984,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,245,246,0,0,0,0
+</data>
+ </layer>
+</map>
