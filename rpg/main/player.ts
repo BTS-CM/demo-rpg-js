@@ -10,7 +10,7 @@ const player: RpgPlayerHooks = {
       player.callMainMenu();
     }
     if (input == Control.Action && player.getVariable("AT_COMPUTER")) {
-      player.showNotification("Accessing computer...");
+      //player.showNotification("Accessing computer...");
       player.gui("computer").open();
       player.showAttachedGui();
     }
@@ -61,8 +61,9 @@ const player: RpgPlayerHooks = {
   },
   async onOutShape(player: RpgPlayer, shape: any) {
     if (shape.name.includes("computer")) {
-      player.setVariable("AT_COMPUTER", null);
+      player.gui("computer").close();
       player.hideAttachedGui();
+      player.setVariable("AT_COMPUTER", null);
     }
   },
   async onJoinMap(player: RpgPlayer) {
