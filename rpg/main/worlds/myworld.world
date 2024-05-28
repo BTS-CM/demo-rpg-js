@@ -2,45 +2,52 @@
     "maps": [
         {
             "fileName": "maps/map.tmx",
-            "height": 960,
-            "width": 960,
-            "x": 576,
-            "y": 480
+            "height": 800,
+            "width": 1024,
+            "x": 2752,
+            "y": -64
         },
         {
             "fileName": "maps/shop-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 1856,
-            "y": -544
+            "x": 3520,
+            "y": -1888
         },
         {
             "fileName": "maps/shop-2.tmx",
-            "height": 320,
-            "width": 320,
-            "x": 2272,
-            "y": -544
+            "height": 480,
+            "width": 480,
+            "x": 3872,
+            "y": -2048
         },
         {
             "fileName": "maps/cellar-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 1856,
-            "y": -960
+            "x": 3520,
+            "y": -1536
         },
         {
             "fileName": "maps/cellar-2.tmx",
             "height": 320,
             "width": 320,
-            "x": 2272,
-            "y": -960
+            "x": 3872,
+            "y": -1536
         },
         {
             "fileName": "maps/shop-4.tmx",
             "height": 320,
-            "width": 960,
+            "width": 1152,
             "x": 2688,
             "y": -544
+        },
+        {
+            "fileName": "maps/corridor.tmx",
+            "height": 608,
+            "width": 160,
+            "x": 3680,
+            "y": -1184
         }
     ],
     "onlyShowAdjacentMaps": false,

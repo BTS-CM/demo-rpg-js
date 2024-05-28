@@ -4,9 +4,8 @@ import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 
 export default defineComponent({
-  name: "computer",
+  name: "bts-computer",
   setup() {
-    const rpgCurrentPlayer = inject("rpgCurrentPlayer");
     const open = ref(true);
     return {
       open,
@@ -16,9 +15,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="computer">
+  <div class="bts-computer">
     <sl-dialog :open="open" label="Dialog" class="dialog-overview">
-      Computer<br />
+      Bitshares modal<br />
       <sl-button slot="footer" variant="primary" @click="open = false">Close</sl-button>
     </sl-dialog>
   </div>
