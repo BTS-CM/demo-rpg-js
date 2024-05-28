@@ -11,14 +11,14 @@
             "fileName": "maps/shop-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 3520,
+            "x": 2688,
             "y": -1888
         },
         {
             "fileName": "maps/shop-2.tmx",
             "height": 480,
             "width": 480,
-            "x": 3872,
+            "x": 3520,
             "y": -2048
         },
         {
@@ -32,7 +32,7 @@
             "fileName": "maps/cellar-2.tmx",
             "height": 320,
             "width": 320,
-            "x": 3872,
+            "x": 2688,
             "y": -1536
         },
         {
@@ -48,6 +48,13 @@
             "width": 160,
             "x": 3680,
             "y": -1184
+        },
+        {
+            "fileName": "maps/gallery.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 4032,
+            "y": -2048
         }
     ],
     "onlyShowAdjacentMaps": false,

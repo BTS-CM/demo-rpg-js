@@ -61,6 +61,21 @@ const player: RpgPlayerHooks = {
     if (input === Control.Action && player.getVariable("AT_COMPUTER")) {
       await promptPlayer(player, "AT_COMPUTER", "Want to access this computer?");
     }
+
+    if (input === Control.Action && player.getVariable("AT_MESSAGE")) {
+      const retrievedVariable = player.getVariable("AT_MESSAGE");
+
+      if (!retrievedVariable.properties || !retrievedVariable.properties.msg) {
+        await player.showText("Welcome to my RPG JS demo implementation!");
+        await player.showText(
+          "Try buying in game items, accessing computers, and viewing NFT art in the gallery!"
+        );
+        return;
+      }
+
+      await player.showText(retrievedVariable.properties.msg);
+    }
+
     //console.log({ x: player.position.x, y: player.position.y });
   },
   async onInShape(player: RpgPlayer, shape: any) {
@@ -96,19 +111,8 @@ const player: RpgPlayerHooks = {
     }
 
     if (shape.name === "message") {
-      await player.showText("Welcome to my RPG JS demo implementation!");
-      await player.showText(
-        "Try buying in game items, accessing computers, and viewing NFT art in the gallery!"
-      );
-      /*
-      await player.showNotification("Message notification");
-      const answer = await player.showChoices("Want to proceed?", [
-        { text: "yes", value: "yes" },
-        { text: "no", value: "no" },
-      ]);
-      console.log({ answer });
-      return;
-      */
+      player.setVariable("AT_MESSAGE", { name: shape.name, properties: shape.obj.properties });
+      player.name = "Read me!";
     }
 
     if (shape.name.includes("market")) {
@@ -127,6 +131,10 @@ const player: RpgPlayerHooks = {
     }
   },
   async onOutShape(player: RpgPlayer, shape: any) {
+    if (shape.name.includes("message")) {
+      player.name = " ";
+      player.setVariable("AT_MESSAGE", null);
+    }
     if (shape.name.includes("computer")) {
       player.name = " ";
       player.gui(shape.obj.properties.component).close();

@@ -51,9 +51,9 @@
   </object>
   <object id="6" name="teleport-1" x="31" y="95.75" width="32.75" height="16.5">
    <properties>
-    <property name="destination" value="shop-1"/>
-    <property name="x" type="int" value="48"/>
-    <property name="y" type="int" value="118"/>
+    <property name="destination" value="gallery"/>
+    <property name="x" type="int" value="41"/>
+    <property name="y" type="int" value="141"/>
    </properties>
   </object>
   <object id="9" name="wall2" x="28.3333" y="289.333" width="262.667" height="8">

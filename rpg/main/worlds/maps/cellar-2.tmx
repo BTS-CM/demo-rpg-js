@@ -51,7 +51,7 @@
   </object>
   <object id="6" name="teleport1" x="30.9583" y="96.4167" width="32.75" height="15.1667">
    <properties>
-    <property name="destination" value="shop-2"/>
+    <property name="destination" value="shop-1"/>
     <property name="x" type="int" value="48"/>
     <property name="y" type="int" value="118"/>
    </properties>

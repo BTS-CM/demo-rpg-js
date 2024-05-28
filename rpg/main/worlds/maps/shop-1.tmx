@@ -58,7 +58,7 @@
   </object>
   <object id="7" name="teleport" x="31.9583" y="95.75" width="32.0834" height="15.8333">
    <properties>
-    <property name="destination" value="cellar-1"/>
+    <property name="destination" value="cellar-2"/>
    </properties>
   </object>
   <object id="8" name="collision-0006" x="25.5" y="288" width="110" height="17">

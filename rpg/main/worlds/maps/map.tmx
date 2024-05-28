@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="19">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="20">
  <tileset firstgid="1" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="1289" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="2729" source="[Base]BaseChip_pipo.tsx"/>
@@ -16,7 +16,7 @@
   </object>
   <object id="13" name="teleport2" x="574.667" y="302.666" width="29.3333" height="37.3334">
    <properties>
-    <property name="destination" value="shop-2"/>
+    <property name="destination" value="gallery"/>
    </properties>
   </object>
   <object id="14" name="teleport3" x="94.6667" y="573.333" width="33.3333" height="33.3333">
@@ -24,7 +24,11 @@
     <property name="destination" value="shop-4"/>
    </properties>
   </object>
-  <object id="16" name="message" x="356" y="242.667" width="54.6667" height="16"/>
+  <object id="16" name="message" x="356" y="242.667" width="54.6667" height="16">
+   <properties>
+    <property name="msg" value="Welcome to my RPG JS demo!"/>
+   </properties>
+  </object>
   <object id="17" name="wall-0002" x="449.333" y="435.333" width="11.3333" height="146.667">
    <properties>
     <property name="collision" type="bool" value="true"/>
