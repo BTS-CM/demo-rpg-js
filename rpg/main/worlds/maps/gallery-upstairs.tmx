@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="172">
+ <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
+ <tileset firstgid="1001" source="../../spritesheets/slates.tsx"/>
+ <tileset firstgid="2289" source="../../spritesheets/Overworld.tsx"/>
+ <tileset firstgid="3729" source="../../spritesheets/gallery.tsx"/>
+ <tileset firstgid="3985" source="power.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="25" height="25">
+  <properties>
+   <property name="z" type="int" value="0"/>
+  </properties>
+  <data encoding="csv">
+527,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,373,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,381,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,337,338,339,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,337,338,339,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,345,346,347,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,337,338,339,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,337,338,339,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
+527,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,3221225826,527
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="25" height="25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
+0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,329,0,331,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
+0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,302,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
+0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,329,302,331,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,1681,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
+0,1681,0,0,1681,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,455,455,455,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
+0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="25" height="25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,330,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,330,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,330,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,375,375,375,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3221227153,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Object Layer 1">
+  <object id="1" name="Start Position" type="start" x="80.466" y="502.382">
+   <point/>
+  </object>
+  <object id="20" name="collision-0002" x="25.75" y="768.125" width="742.546" height="6.84469">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="21" name="collision-0004" x="31.8333" y="87.3333" width="736.606" height="5.8182">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="22" name="collision-0005" x="25.25" y="87.3258" width="6.45455" height="681.674">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="23" name="collision-0003" x="768.458" y="87.2273" width="6.85227" height="687.848">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="110" name="collision-0032" x="224.121" y="672.032" width="543.819" height="62.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="111" name="collision-0033" x="224.424" y="544.244" width="543.819" height="61.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="112" name="collision-0034" x="224.424" y="416.244" width="543.819" height="61.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="113" name="collision-0035" x="224.757" y="287.911" width="543.819" height="62.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="114" name="collision-0036" x="224.09" y="159.911" width="543.819" height="62.3447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="116" name="teleport1" x="45.6364" y="540.909" width="69.2727" height="27.8182">
+   <properties>
+    <property name="destination" value="gallery"/>
+    <property name="x" type="int" value="70"/>
+    <property name="y" type="int" value="615"/>
+   </properties>
+  </object>
+  <object id="117" name="collision-0040" x="33.1061" y="498.163" width="12.1212" height="70.3407">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="118" name="collision-0041" x="114.606" y="498.83" width="12.1212" height="70.3407">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="119" name="collision-0042" x="31.9394" y="568.496" width="95.7879" height="19.0074">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="120" name="collision-0044" x="33.1894" y="242.496" width="12.1212" height="109.007">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="121" name="collision-0043" x="114.689" y="243.163" width="12.1212" height="108.341">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="122" name="collision-0045" x="32.9394" y="255.829" width="94.1212" height="5.00767">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="123" name="teleport2" x="45.8636" y="261.591" width="69.2727" height="54.8182">
+   <properties>
+    <property name="destination" value="gallery-offices"/>
+   </properties>
+  </object>
+  <object id="124" name="gallery_0011" x="256.578" y="431.847" width="31.25" height="55.4167">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="125" name="gallery_0012" x="320.703" y="431.972" width="31.25" height="55.4167">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="126" name="gallery_0013" x="384.536" y="432.222" width="31.5833" height="55.0833">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="127" name="gallery_0014" x="448.604" y="431.782" width="31.25" height="54.7197">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="128" name="gallery_0015" x="512.286" y="431.722" width="31.9167" height="55.6894">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="129" name="gallery_0016" x="576.619" y="431.711" width="31.25" height="55.356">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="130" name="gallery_0017" x="640.619" y="431.711" width="31.25" height="55.6894">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="131" name="gallery_0018" x="704.161" y="432.044" width="31.9167" height="55.356">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="132" name="gallery_0001" x="256.411" y="560.118" width="31.75" height="55.25">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="133" name="gallery_0002" x="320.286" y="559.743" width="31.75" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="134" name="gallery_0003" x="384.536" y="559.493" width="32" height="56.25">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="135" name="gallery_0004" x="448.604" y="560.469" width="31.5" height="55.1364">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="136" name="gallery_0005" x="512.286" y="560.493" width="32" height="55.0227">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="137" name="gallery_0006" x="576.536" y="559.981" width="31.5" height="56.0227">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="138" name="gallery_0007" x="640.036" y="559.981" width="32.25" height="55.7727">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="139" name="gallery_0008" x="704.161" y="560.231" width="32" height="55.2727">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="140" name="gallery_0021" x="256.744" y="303.91" width="31.25" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="141" name="gallery_0022" x="320.536" y="304.035" width="30.5833" height="55.0833">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="142" name="gallery_0023" x="384.369" y="303.618" width="31.25" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="143" name="gallery_0024" x="448.771" y="303.844" width="30.9167" height="55.0531">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="144" name="gallery_0025" x="512.453" y="304.451" width="31.5833" height="54.6894">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="145" name="gallery_0026" x="576.453" y="303.773" width="31.25" height="55.356">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="146" name="gallery_0027" x="640.786" y="303.106" width="30.9167" height="55.6894">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="147" name="gallery_0028" x="704.328" y="304.106" width="31.9167" height="55.6894">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="148" name="gallery_0031" x="256.468" y="176.129" width="31.6136" height="55.3864">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="149" name="gallery_0032" x="320.32" y="175.891" width="31.7955" height="55.3864">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="150" name="gallery_0033" x="384.275" y="175.777" width="31.7955" height="55.2045">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="151" name="gallery_0034" x="447.979" y="176.003" width="31.9773" height="55.2046">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="152" name="gallery_0035" x="512.388" y="176.095" width="31.6136" height="55.0227">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="153" name="gallery_0036" x="576.297" y="175.901" width="31.9773" height="55.0227">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="154" name="gallery_0037" x="640.116" y="175.811" width="32.3409" height="55.3863">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="155" name="gallery_0038" x="704.081" y="175.901" width="31.9773" height="55.0227">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="156" name="gallery_0041" x="256.172" y="48.1298" width="31.4318" height="55.5682">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="157" name="gallery_0042" x="320.297" y="47.8911" width="31.7955" height="55.5682">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="158" name="gallery_0043" x="384.343" y="47.7775" width="31.6136" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="159" name="gallery_0044" x="448.229" y="47.8217" width="31.9773" height="55.9319">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="160" name="gallery_0045" x="512.093" y="48.0048" width="32.1591" height="55.5682">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="161" name="gallery_0046" x="576.275" y="47.8109" width="32.1591" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="162" name="gallery_0047" x="639.729" y="47.9019" width="32.3409" height="55.9318">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="163" name="gallery_0048" x="704.241" y="47.9928" width="31.7955" height="55.3863">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="164" name="gallery_0009" x="512.445" y="687.919" width="31.5" height="56">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="165" name="gallery_0000" x="576.331" y="687.987" width="32.25" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="166" name="gallery_0019" x="384.218" y="687.987" width="31.75" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="167" name="gallery_0010" x="448.354" y="688.305" width="31.5" height="55.5">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="168" name="gallery_0029" x="256.15" y="688.214" width="31.75" height="55.5">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="169" name="gallery_0020" x="319.786" y="688.032" width="32.5" height="55.5">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="170" name="gallery_0050" x="640.208" y="688.125" width="32.25" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+  <object id="171" name="gallery_0051" x="703.792" y="688.042" width="32.25" height="55.75">
+   <properties>
+    <property name="acknowledgements" value=""/>
+    <property name="artist" value=""/>
+    <property name="blockchain" value="bitshares"/>
+    <property name="component" value="gallery"/>
+    <property name="header" value=""/>
+    <property name="narrative" value=""/>
+    <property name="symbol" value=""/>
+    <property name="tags" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="4" name="Tile Layer 4" width="25" height="25">
+  <properties>
+   <property name="z" type="int" value="1"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1358,1358,1358,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1610612981,1610612981,1610612981,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,536872593,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3993,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3995,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,0,0,0,0,0,0,0,0,0,1610614417,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Tile Layer 5" width="25" height="25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

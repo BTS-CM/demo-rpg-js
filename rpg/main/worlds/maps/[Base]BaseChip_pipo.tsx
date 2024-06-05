@@ -1682,32 +1682,38 @@
  </tile>
  <tile id="352">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="353">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="354">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="355">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="356">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="357">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="358">
@@ -1722,32 +1728,38 @@
  </tile>
  <tile id="360">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="361">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="362">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="363">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="364">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="365">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
+   <property name="z" type="int" value="1"/>
   </properties>
  </tile>
  <tile id="366">
@@ -3580,7 +3592,7 @@
  </tile>
  <tile id="724">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
   </properties>
  </tile>
  <tile id="725">
@@ -3690,7 +3702,7 @@
  </tile>
  <tile id="746">
   <properties>
-   <property name="collision" type="bool" value="false"/>
+   <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
  <tile id="747">

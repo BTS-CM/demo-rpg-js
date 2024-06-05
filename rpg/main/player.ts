@@ -10,6 +10,7 @@ const _allowedComponents = [
   "gallery",
 ];
 
+// Ask the user if they want to launch a GUI
 async function promptPlayer(player: RpgPlayer, variable: string, prompt: string) {
   if (!variable || !_allowedVariables.includes(variable)) {
     console.log("Rejected prompt");
@@ -18,26 +19,48 @@ async function promptPlayer(player: RpgPlayer, variable: string, prompt: string)
 
   const retrievedVariable = player.getVariable(variable);
 
+  if (
+    !retrievedVariable.properties ||
+    !retrievedVariable.properties.component ||
+    !_allowedComponents.includes(retrievedVariable.properties.component)
+  ) {
+    console.log("Rejected prompt");
+    return;
+  }
+
+  if (
+    retrievedVariable.properties.component === "gallery" &&
+    !retrievedVariable.properties.symbol.length
+  ) {
+    await player.showText("No art is currently on display here yet.");
+    return;
+  }
+
   const answer = await player.showChoices(prompt, [
     { text: "yes", value: "yes" },
     { text: "no", value: "no" },
   ]);
 
-  if (
-    !answer ||
-    (answer && answer.value === "no") ||
-    !retrievedVariable.properties ||
-    !retrievedVariable.properties.component ||
-    !_allowedComponents.includes(retrievedVariable.properties.component)
-  ) {
+  if (!answer || (answer && answer.value === "no")) {
     console.log("User rejected prompt");
     return;
   }
 
-  player
+  if (player.gui(retrievedVariable.properties.component)) {
+    console.log("Closing previous GUI");
+    await player.gui(retrievedVariable.properties.component).close();
+    await player.hideAttachedGui();
+  }
+
+  await player
     .gui(retrievedVariable.properties.component)
     .open({ properties: retrievedVariable.properties });
-  player.showAttachedGui();
+  await player.showAttachedGui();
+}
+
+// Launch the intro GUI
+async function playerIntro(player: RpgPlayer) {
+  await player.gui("intro").open();
 }
 
 const player: RpgPlayerHooks = {
@@ -74,6 +97,10 @@ const player: RpgPlayerHooks = {
       }
 
       await player.showText(retrievedVariable.properties.msg);
+    }
+
+    if (input === Control.Action) {
+      console.log({ x: player.position.x, y: player.position.y });
     }
 
     //console.log({ x: player.position.x, y: player.position.y });
@@ -158,7 +185,8 @@ const player: RpgPlayerHooks = {
     if (player.getVariable("AFTER_INTRO")) {
       return;
     }
-    await player.showText("Welcome to the astro rpg js");
+    //await player.showText("Welcome to the astro rpg js");
+    await playerIntro(player);
     player.setVariable("AFTER_INTRO", true);
   },
 };

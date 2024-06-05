@@ -1,0 +1,245 @@
+<script>
+import { defineComponent, computed, watchEffect, ref, onMounted, inject } from "vue";
+import { useStore } from "@nanostores/vue";
+
+import {
+  //type User,
+  $currentUser,
+  setCurrentUser,
+  $userStorage,
+  removeUser,
+} from "../nanostores/users.ts";
+import { createUserSearchStore } from "../nanoeffects/UserSearch";
+
+/*
+interface SearchResponse {
+  id: string;
+  username: string;
+  referrer: string;
+}
+*/
+
+import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
+import "@shoelace-style/shoelace/dist/components/input/input.js";
+
+export default defineComponent({
+  name: "intro",
+  setup() {
+    const open = ref(true);
+
+    const chain = ref();
+    const method = ref();
+    const inputText = ref();
+
+    const inProgress = ref(false);
+    const searchResult = ref(null);
+    const searchError = ref(false);
+
+    /*
+    const users = ref([]);
+    onMounted(() => {
+      const unsubscribe = $userStorage.subscribe((data) => {
+        users.value = data.users;
+      });
+      return unsubscribe;
+    });
+    */
+    const storedUsers = useStore($userStorage);
+
+    async function search() {
+      if (!chain.value || !inputText.value) {
+        console.log("Invalid search parameters..");
+        return;
+      }
+
+      searchError.value = false;
+      inProgress.value = true;
+
+      const searchStore = createUserSearchStore([chain.value, inputText.value]);
+
+      const unsub = searchStore.subscribe((result) => {
+        if (result.error) {
+          searchError.value = true;
+          inProgress.value = false;
+          console.error(result.error);
+        }
+
+        if (!result.loading) {
+          if (result.data) {
+            const res = result.data;
+            searchResult.value = res;
+            inProgress.value = false;
+          }
+        }
+      });
+
+      return () => {
+        unsub();
+      };
+    }
+
+    function handleCloseRequest(event) {
+      if (event.detail.source === "overlay" || event.detail.source === "close-button") {
+        event.preventDefault();
+      }
+    }
+
+    return {
+      // basic dialog functionality
+      open,
+      chain,
+      handleCloseRequest,
+      // mode and storage
+      method,
+      storedUsers,
+      setCurrentUser,
+      // account search functionality
+      inputText,
+      inProgress,
+      searchError,
+      searchResult,
+      search,
+    };
+  },
+});
+</script>
+
+<template>
+  <div class="computer">
+    <sl-dialog
+      :open="open"
+      label="Select a blockchain account to proceed!"
+      class="dialog-overview"
+      @sl-request-close="handleCloseRequest"
+    >
+      <div v-if="!chain">
+        <p>Please select the blockchain you want to use.</p>
+        <div class="smallGrid">
+          <sl-button slot="footer" variant="neutral" @click="chain = 'bitshares'"
+            >Bitshares
+          </sl-button>
+          <sl-button slot="footer" variant="neutral" @click="chain = 'bitshares_testnet'">
+            Bitshares testnet
+          </sl-button>
+        </div>
+      </div>
+
+      <div v-if="chain && !method">
+        <p>
+          {{
+            chain === "bitshares"
+              ? "You can either search for a new or a previous Bitshares account"
+              : "You can either search for a new or a previous Bitshares testnet account"
+          }}
+        </p>
+        <p>How do you want to proceed?</p>
+        <div class="smallGrid">
+          <sl-button slot="footer" variant="neutral" @click="method = 'new'">
+            Search for an account
+          </sl-button>
+          <sl-button slot="footer" variant="neutral" @click="method = 'existing'">
+            Previously used accounts
+          </sl-button>
+        </div>
+      </div>
+
+      <div v-if="chain && method === 'new'">
+        <p>
+          {{
+            chain === "bitshares"
+              ? "Searching for a replacement Bitshares (BTS) account"
+              : "Searching for a replacement Bitshares testnet (TEST) account"
+          }}
+        </p>
+        <sl-input
+          type="text"
+          placeholder="Username"
+          @input="
+            inputText = $event.target.value;
+            searchResult = null;
+            searchError = false;
+          "
+          @keypress.enter="search"
+        ></sl-input>
+
+        <div class="smallGrid">
+          <sl-button slot="footer" variant="primary" @click="search">Search</sl-button>
+          <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
+        </div>
+        <sl-divider v-if="searchResult"></sl-divider>
+      </div>
+
+      <div v-if="searchResult">
+        <p>
+          {{
+            chain === "bitshares"
+              ? "Found the following Bitshares (BTS) account!"
+              : "Found the following Bitshares testnet (TEST) account!"
+          }}
+        </p>
+        <p>{{ searchResult.name }} ({{ searchResult.id }})</p>
+        <sl-button
+          slot="footer"
+          variant="primary"
+          @click="
+            setCurrentUser(searchResult.username, searchResult.id, searchResult.referrer, chain);
+            open = false;
+          "
+        >
+          Proceed with this account
+        </sl-button>
+      </div>
+
+      <div v-if="chain && method === 'existing'">
+        <p>
+          {{
+            chain === "bitshares"
+              ? "Selecting a previously used Bitshares (BTS) account"
+              : "Selecting a previously used Bitshares testnet (TEST) account"
+          }}
+        </p>
+
+        <div v-if="storedUsers && storedUsers.users && storedUsers.users.length > 0">
+          <p>Choose an account from the list below:</p>
+          <ul>
+            <li v-for="user in storedUsers.users" :key="user.id">
+              <sl-button
+                variant="neutral"
+                @click="
+                  setCurrentUser(user.username, user.id, user.referrer, chain);
+                  open = false;
+                "
+              >
+                {{ user.username }} ({{ user.id }})
+              </sl-button>
+            </li>
+          </ul>
+
+          <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
+        </div>
+        <div v-else>
+          <p>No previously used accounts found, please use a new account.</p>
+          <sl-button slot="footer" variant="neutral" @click="method = 'new'">
+            Find account
+          </sl-button>
+        </div>
+      </div>
+    </sl-dialog>
+  </div>
+</template>
+
+<style scoped>
+sl-dialog::part(header) {
+  padding-bottom: 5px;
+}
+sl-dialog::part(body) {
+  padding-top: 5px;
+}
+.smallGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin-top: 30px;
+}
+</style>

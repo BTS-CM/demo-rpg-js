@@ -11,50 +11,57 @@
             "fileName": "maps/shop-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 2688,
-            "y": -1888
-        },
-        {
-            "fileName": "maps/shop-2.tmx",
-            "height": 480,
-            "width": 480,
-            "x": 3520,
-            "y": -2048
+            "x": 2848,
+            "y": -768
         },
         {
             "fileName": "maps/cellar-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 3520,
-            "y": -1536
+            "x": 3648,
+            "y": -416
         },
         {
             "fileName": "maps/cellar-2.tmx",
             "height": 320,
             "width": 320,
-            "x": 2688,
-            "y": -1536
+            "x": 2848,
+            "y": -416
         },
         {
             "fileName": "maps/shop-4.tmx",
             "height": 320,
             "width": 1152,
-            "x": 2688,
-            "y": -544
+            "x": 2816,
+            "y": 800
         },
         {
             "fileName": "maps/corridor.tmx",
             "height": 608,
             "width": 160,
-            "x": 3680,
-            "y": -1184
+            "x": 3808,
+            "y": 128
         },
         {
             "fileName": "maps/gallery.tmx",
             "height": 800,
             "width": 800,
-            "x": 4032,
-            "y": -2048
+            "x": 3648,
+            "y": -1248
+        },
+        {
+            "fileName": "maps/gallery-upstairs.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 3648,
+            "y": -2080
+        },
+        {
+            "fileName": "maps/gallery-offices.tmx",
+            "height": 800,
+            "width": 800,
+            "x": 3648,
+            "y": -2912
         }
     ],
     "onlyShowAdjacentMaps": false,

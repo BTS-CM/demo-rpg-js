@@ -11,6 +11,10 @@
     "node": ">=14"
   },
   "dependencies": {
+    "@exodus/bytebuffer": "git@github.com:BTS-CM/bytebuffer.js.git",
+    "@nanostores/persistent": "^0.10.1",
+    "@nanostores/query": "^0.2.10",
+    "@nanostores/vue": "^0.10.0",
     "@rpgjs/client": "4.3.0",
     "@rpgjs/default-gui": "^4.3.0",
     "@rpgjs/gamepad": "^4.3.0",
@@ -19,7 +23,18 @@
     "@rpgjs/standalone": "4.3.0",
     "@rpgjs/types": "4.0.5",
     "@shoelace-style/shoelace": "^2.15.1",
-    "socket.io-client": "4.7.4"
+    "assert": "^2.1.0",
+    "bigi": "^1.4.2",
+    "bs58": "^5.0.0",
+    "create-hash": "^1.2.0",
+    "create-hmac": "^1.1.7",
+    "deep-equal": "^2.2.3",
+    "ecurve": "^1.0.6",
+    "isomorphic-ws": "^5.0.0",
+    "long": "^5.2.3",
+    "safe-buffer": "^5.2.1",
+    "socket.io-client": "4.7.4",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@rpgjs/compiler": "4.3.0",

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="108">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="119">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
  <tileset firstgid="1001" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="2289" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="3729" source="../../spritesheets/gallery.tsx"/>
  <layer id="1" name="Tile Layer 1" width="25" height="25">
+  <properties>
+   <property name="z" type="int" value="0"/>
+  </properties>
   <data encoding="csv">
 527,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
 1610613090,373,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
@@ -22,9 +25,9 @@
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
-1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
-1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
+1610613090,337,338,339,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,337,338,339,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
+1610613090,345,346,347,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
@@ -39,23 +42,23 @@
 0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
-0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
 0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
-0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
 0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
-0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
 0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
-0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
-0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,329,0,331,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
 0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
-0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
-0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
+0,1681,302,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2147485329,0,
+0,1681,0,0,0,0,0,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,3758098065,0,
 0,1681,0,0,0,0,0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,3221227153,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485329,0,
 0,1681,0,0,0,0,0,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,2684356241,0,
@@ -70,19 +73,19 @@
 0,304,0,1610614417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
 0,0,1610614417,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,678,679,695,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,228,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,519,519,519,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,725,717,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,725,717,725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,725,717,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,725,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1681,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356241,0,
+0,0,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,330,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,330,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,231,232,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -95,12 +98,12 @@
   <object id="1" name="Start Position" type="start" x="160.466" y="741.049">
    <point/>
   </object>
-  <object id="7" name="teleport1" x="32.0341" y="95.8409" width="32.0834" height="15.1667">
+  <object id="7" name="teleport3" x="32.0341" y="95.8409" width="32.0834" height="15.1667">
    <properties>
     <property name="destination" value="cellar-1"/>
    </properties>
   </object>
-  <object id="8" name="teleport" x="128.958" y="785.75" width="63.4167" height="15.1667">
+  <object id="8" name="teleport2" x="128.958" y="785.75" width="63.4167" height="15.1667">
    <properties>
     <property name="destination" value="map"/>
     <property name="x" type="int" value="592"/>
@@ -142,19 +145,21 @@
     <property name="collision" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="28" name="gallery_0011" x="256.75" y="444.25" width="29.25" height="41.75">
+  <object id="28" name="gallery_0011" x="256.417" y="431.917" width="31.25" height="55.4167">
    <properties>
     <property name="acknowledgements" value="Models and Loras: Pathfinder, Tomas Agilar planets, RunDiffusion FX 2.5D, VinteProtogenMix, RCNZ Optimus Primate, DreamShaper. Textual Inversions: BadDream Easy Negative hoppagames adventure_diffusion epiCNegative"/>
     <property name="artist" value="nft.artist"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value="webp"/>
     <property name="header" value="Orbs"/>
+    <property name="media_qty" type="int" value="34"/>
     <property name="narrative" value="It's unclear how the orbs sustain flight, and some seem to be portals to other worlds."/>
     <property name="symbol" value="NFTEA.ORBS"/>
     <property name="tags" value="stable diffusion, ai, orbs, first contact, uaps, nhi"/>
    </properties>
   </object>
-  <object id="35" name="gallery_0012" x="320.875" y="445.375" width="29.25" height="41.75">
+  <object id="35" name="gallery_0012" x="320.542" y="432.042" width="31.25" height="55.4167">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -166,7 +171,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="36" name="gallery_0013" x="386.375" y="441.625" width="29.25" height="41.75">
+  <object id="36" name="gallery_0013" x="384.375" y="432.292" width="31.5833" height="55.0833">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -178,7 +183,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="37" name="gallery_0014" x="449.443" y="442.852" width="29.25" height="41.3864">
+  <object id="37" name="gallery_0014" x="448.443" y="431.852" width="31.25" height="54.7197">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -190,7 +195,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="38" name="gallery_0015" x="512.125" y="450.125" width="29.25" height="41.0227">
+  <object id="38" name="gallery_0015" x="512.125" y="431.792" width="31.9167" height="55.6894">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -202,7 +207,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="39" name="gallery_0016" x="579.125" y="444.114" width="29.25" height="41.0227">
+  <object id="39" name="gallery_0016" x="576.458" y="431.781" width="31.25" height="55.356">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -214,7 +219,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="40" name="gallery_0017" x="639.125" y="450.114" width="29.25" height="41.0227">
+  <object id="40" name="gallery_0017" x="640.458" y="431.781" width="31.25" height="55.6894">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -226,7 +231,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="41" name="gallery_0018" x="700" y="446.114" width="29.25" height="41.0227">
+  <object id="41" name="gallery_0018" x="704" y="432.114" width="31.9167" height="55.356">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -238,7 +243,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="50" name="gallery_0001" x="256.25" y="575.688" width="29.25" height="41.75">
+  <object id="50" name="gallery_0001" x="256.25" y="560.188" width="31.75" height="55.25">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -250,7 +255,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="51" name="gallery_0002" x="320.375" y="577.813" width="29.25" height="41.75">
+  <object id="51" name="gallery_0002" x="320.125" y="559.813" width="31.75" height="55.75">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -262,7 +267,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="52" name="gallery_0003" x="385.875" y="574.063" width="29.25" height="41.75">
+  <object id="52" name="gallery_0003" x="384.375" y="559.563" width="32" height="56.25">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -274,7 +279,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="53" name="gallery_0004" x="449.943" y="572.289" width="29.25" height="41.3864">
+  <object id="53" name="gallery_0004" x="448.443" y="560.539" width="31.5" height="55.1364">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -286,7 +291,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="54" name="gallery_0005" x="517.625" y="571.563" width="29.25" height="41.0227">
+  <object id="54" name="gallery_0005" x="512.125" y="560.563" width="32" height="55.0227">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -298,7 +303,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="55" name="gallery_0006" x="577.625" y="576.551" width="29.25" height="41.0227">
+  <object id="55" name="gallery_0006" x="576.375" y="560.051" width="31.5" height="56.0227">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -310,7 +315,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="56" name="gallery_0007" x="641.625" y="577.551" width="29.25" height="41.0227">
+  <object id="56" name="gallery_0007" x="639.875" y="560.051" width="32.25" height="55.7727">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -322,7 +327,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="57" name="gallery_0008" x="703.5" y="569.551" width="29.25" height="41.0227">
+  <object id="57" name="gallery_0008" x="704" y="560.301" width="32" height="55.2727">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -334,7 +339,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="58" name="gallery_0021" x="256.25" y="318.313" width="29.25" height="41.75">
+  <object id="58" name="gallery_0021" x="256.583" y="303.98" width="31.25" height="55.75">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -346,7 +351,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="59" name="gallery_0022" x="319.375" y="315.438" width="29.25" height="41.75">
+  <object id="59" name="gallery_0022" x="320.375" y="304.105" width="30.5833" height="55.0833">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -358,7 +363,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="60" name="gallery_0023" x="383.875" y="321.688" width="29.25" height="41.75">
+  <object id="60" name="gallery_0023" x="384.208" y="303.688" width="31.25" height="55.75">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -370,7 +375,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="61" name="gallery_0024" x="444.943" y="316.914" width="29.25" height="41.3864">
+  <object id="61" name="gallery_0024" x="448.61" y="303.914" width="30.9167" height="55.0531">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -382,7 +387,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="62" name="gallery_0025" x="514.625" y="322.188" width="29.25" height="41.0227">
+  <object id="62" name="gallery_0025" x="512.292" y="304.521" width="31.5833" height="54.6894">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -394,7 +399,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="63" name="gallery_0026" x="571.625" y="315.176" width="29.25" height="41.0227">
+  <object id="63" name="gallery_0026" x="576.292" y="303.843" width="31.25" height="55.356">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -406,7 +411,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="64" name="gallery_0027" x="637.625" y="322.176" width="29.25" height="41.0227">
+  <object id="64" name="gallery_0027" x="640.625" y="303.176" width="30.9167" height="55.6894">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -418,7 +423,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="65" name="gallery_0028" x="708.5" y="319.176" width="29.25" height="41.0227">
+  <object id="65" name="gallery_0028" x="704.167" y="304.176" width="31.9167" height="55.6894">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -430,7 +435,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="74" name="gallery_0031" x="256.125" y="188.563" width="29.25" height="41.75">
+  <object id="74" name="gallery_0031" x="256.307" y="176.199" width="31.6136" height="55.3864">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -442,7 +447,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="75" name="gallery_0032" x="321.25" y="192.688" width="29.25" height="41.75">
+  <object id="75" name="gallery_0032" x="320.159" y="175.961" width="31.7955" height="55.3864">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -454,7 +459,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="76" name="gallery_0033" x="383.75" y="190.938" width="29.25" height="41.75">
+  <object id="76" name="gallery_0033" x="384.114" y="175.847" width="31.7955" height="55.2045">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -466,7 +471,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="77" name="gallery_0034" x="447.818" y="189.164" width="29.25" height="41.3864">
+  <object id="77" name="gallery_0034" x="447.818" y="176.073" width="31.9773" height="55.2046">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -478,7 +483,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="78" name="gallery_0035" x="513.5" y="189.438" width="29.25" height="41.0227">
+  <object id="78" name="gallery_0035" x="512.227" y="176.165" width="31.6136" height="55.0227">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -490,7 +495,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="79" name="gallery_0036" x="578.5" y="189.426" width="29.25" height="41.0227">
+  <object id="79" name="gallery_0036" x="576.136" y="175.971" width="31.9773" height="55.0227">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -502,7 +507,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="80" name="gallery_0037" x="642.5" y="194.426" width="29.25" height="41.0227">
+  <object id="80" name="gallery_0037" x="639.955" y="175.881" width="32.3409" height="55.3863">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -514,7 +519,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="81" name="gallery_0038" x="703.375" y="189.426" width="29.25" height="41.0227">
+  <object id="81" name="gallery_0038" x="703.92" y="175.971" width="31.9773" height="55.0227">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -526,19 +531,19 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="90" name="gallery_0041" x="256.375" y="66.563" width="29.25" height="41.75">
+  <object id="90" name="gallery_0041" x="256.011" y="48.1994" width="31.4318" height="55.5682">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
-    <property name="header" value="Direciton"/>
+    <property name="header" value="Direction"/>
     <property name="narrative" value="Input: direction control guidance leadership order administration charge command government oversight supervision aspect objective outlook path trend bearing. Style: corporate propaganda acrylic painting"/>
     <property name="symbol" value="NFTEA.DIRECTION"/>
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="91" name="gallery_0042" x="320.5" y="66.688" width="29.25" height="41.75">
+  <object id="91" name="gallery_0042" x="320.136" y="47.9607" width="31.7955" height="55.5682">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -550,7 +555,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="92" name="gallery_0043" x="386.727" y="68.938" width="30.1591" height="41.75">
+  <object id="92" name="gallery_0043" x="384.182" y="47.8471" width="31.6136" height="55.75">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -562,7 +567,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="93" name="gallery_0044" x="443.341" y="69.164" width="29.9773" height="41.3864">
+  <object id="93" name="gallery_0044" x="448.068" y="47.8913" width="31.9773" height="55.9319">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -574,7 +579,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="94" name="gallery_0045" x="512.659" y="68.438" width="30.3409" height="41.0227">
+  <object id="94" name="gallery_0045" x="511.932" y="48.0744" width="32.1591" height="55.5682">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -586,7 +591,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, machine learning"/>
    </properties>
   </object>
-  <object id="95" name="gallery_0046" x="575.023" y="70.426" width="29.9773" height="41.0227">
+  <object id="95" name="gallery_0046" x="576.114" y="47.8805" width="32.1591" height="55.75">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -598,7 +603,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="96" name="gallery_0047" x="636.841" y="73.426" width="30.1591" height="41.0227">
+  <object id="96" name="gallery_0047" x="639.568" y="47.9715" width="32.3409" height="55.9318">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -610,7 +615,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="97" name="gallery_0048" x="703.898" y="64.426" width="29.9773" height="41.0227">
+  <object id="97" name="gallery_0048" x="704.08" y="48.0624" width="31.7955" height="55.3863">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -622,7 +627,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligence, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="98" name="gallery_0009" x="512.284" y="698.489" width="29.25" height="41.75">
+  <object id="98" name="gallery_0009" x="512.284" y="687.989" width="31.5" height="56">
    <properties>
     <property name="acknowledgements" value="Isometric SD 1.5, Stable Diffusion"/>
     <property name="artist" value="nft.artist"/>
@@ -634,19 +639,21 @@
     <property name="tags" value="isometric, airdrop, cities"/>
    </properties>
   </object>
-  <object id="99" name="gallery_0000" x="577.42" y="701.307" width="29.25" height="41.75">
+  <object id="99" name="gallery_0000" x="576.17" y="688.057" width="32.25" height="55.75">
    <properties>
     <property name="acknowledgements" value="Stable diffusion, Yoji Shinkawa Style LoRA, BadDream, UnrealisticDream, easynegative"/>
     <property name="artist" value="nft.artist"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value="webp"/>
     <property name="header" value="power"/>
+    <property name="media_qty" type="int" value="6"/>
     <property name="narrative" value="The Bitshares blockchain can power everything."/>
     <property name="symbol" value="NFTEA.POWER"/>
     <property name="tags" value="airdrop, ai, technology"/>
    </properties>
   </object>
-  <object id="100" name="gallery_0019" x="384.307" y="699.307" width="29.25" height="41.75">
+  <object id="100" name="gallery_0019" x="384.057" y="688.057" width="31.75" height="55.75">
    <properties>
     <property name="acknowledgements" value="Generated using studio ghibli style lora, dreamshaper 5 model, bad dream and unrealistic dream lora, easynegative lora."/>
     <property name="artist" value="nft.artist"/>
@@ -658,7 +665,7 @@
     <property name="tags" value="stable diffusion, lora, ai, generative art"/>
    </properties>
   </object>
-  <object id="101" name="gallery_0010" x="445.443" y="701.125" width="29.25" height="41.75">
+  <object id="101" name="gallery_0010" x="448.193" y="688.375" width="31.5" height="55.5">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts using Stable diffusion 1.5"/>
     <property name="artist" value="nft.artist"/>
@@ -670,7 +677,7 @@
     <property name="tags" value="stable diffusion, lora, ai, generative art"/>
    </properties>
   </object>
-  <object id="102" name="gallery_0029" x="257.489" y="700.034" width="29.25" height="41.75">
+  <object id="102" name="gallery_0029" x="255.989" y="688.284" width="31.75" height="55.5">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -682,7 +689,7 @@
     <property name="tags" value="vqgan, clip, artificial intelligience, ai, machine learning, ml, generative art"/>
    </properties>
   </object>
-  <object id="103" name="gallery_0020" x="320.625" y="698.852" width="29.25" height="41.75">
+  <object id="103" name="gallery_0020" x="319.625" y="688.102" width="32.5" height="55.5">
    <properties>
     <property name="acknowledgements" value="This NFT's images were generated from a combination of positive &amp; negative text prompts with VQGAN and CLIP (z+quantize method)."/>
     <property name="artist" value="nft.artist"/>
@@ -699,6 +706,46 @@
     <property name="msg" value="Welcome to the NFTEA Gallery! Check out the current collections on display!"/>
    </properties>
   </object>
+  <object id="110" name="collision-0032" x="224.121" y="672.032" width="543.819" height="62.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="111" name="collision-0033" x="224.424" y="544.244" width="543.819" height="61.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="112" name="collision-0034" x="224.424" y="416.244" width="543.819" height="61.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="113" name="collision-0035" x="224.757" y="287.911" width="543.819" height="62.8447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="114" name="collision-0036" x="224.09" y="159.911" width="543.819" height="62.3447">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="116" name="collision-0040" x="114.167" y="511.36" width="14.3939" height="96.3407">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="117" name="collision-0041" x="32.803" y="511.496" width="81.7272" height="5.3407">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="118" name="teleport1" x="45.625" y="517.75" width="67.75" height="41.8333">
+   <properties>
+    <property name="destination" value="gallery-upstairs"/>
+   </properties>
+  </object>
  </objectgroup>
  <layer id="4" name="Tile Layer 4" width="25" height="25">
   <properties>
@@ -710,17 +757,17 @@
 0,0,0,0,0,0,0,0,3874,0,3876,0,3878,0,3880,0,3882,0,3884,0,3886,0,3888,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,1610614417,3221227153,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,3826,0,3828,0,3830,0,3832,0,3834,0,3836,0,3838,0,3840,0,0,
-0,0,0,0,0,0,0,0,3842,0,3844,0,3846,0,3848,0,3850,0,3852,0,3854,0,3856,0,0,
+0,960,980,0,0,0,0,0,3826,0,3828,0,3830,0,3832,0,3834,0,3836,0,3838,0,3840,0,0,
+0,944,0,0,0,0,0,0,3842,0,3844,0,3846,0,3848,0,3850,0,3852,0,3854,0,3856,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,3794,0,3796,0,3798,0,3800,0,3802,0,3804,0,3806,0,3808,0,0,
+0,0,2147484624,0,0,0,0,0,3794,0,3796,0,3798,0,3800,0,3802,0,3804,0,3806,0,3808,0,0,
 0,0,0,0,0,0,0,0,3810,0,3812,0,3814,0,3816,0,3818,0,3820,0,3822,0,3824,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,3730,0,3732,0,3734,0,3736,0,3738,0,3740,0,3742,0,3744,0,0,
+0,0,2147484622,0,0,0,0,0,3730,0,3732,0,3734,0,3736,0,3738,0,3740,0,3742,0,3744,0,0,
 0,0,0,0,0,0,0,0,3746,0,3748,0,3750,0,3752,0,3754,0,3756,0,3758,0,3760,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1358,1358,1358,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,3768,0,3764,0,3766,0,3762,0,3770,0,3772,0,3774,0,3776,0,0,
 0,0,0,0,0,0,0,0,3784,0,3780,0,3782,0,3778,0,3786,0,3788,0,3790,0,3792,0,0,
@@ -730,6 +777,35 @@
 0,0,0,0,0,0,0,0,3906,0,3908,0,3910,0,3912,0,3914,0,3916,0,0,0,0,0,0,
 0,1610614417,1610614417,1610614417,0,0,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,1610614417,0,0,0,0,0,0,0,0,0,1610614417,0,
 0,0,0,0,245,246,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Tile Layer 5" width="25" height="25">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3930,3931,3929,3931,3929,3931,3929,3931,3929,3931,3929,3931,3932,0,0,0,0,0,
+0,0,0,0,0,0,0,3946,3947,3945,3947,3945,3947,3945,3947,3945,3947,3945,3947,3948,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
 </map>

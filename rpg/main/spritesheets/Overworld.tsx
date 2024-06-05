@@ -111,6 +111,34 @@
    <property name="collision" type="bool" value="true"/>
   </properties>
  </tile>
+ <tile id="141">
+  <animation>
+   <frame tileid="16" duration="150"/>
+   <frame tileid="17" duration="150"/>
+   <frame tileid="18" duration="150"/>
+   <frame tileid="19" duration="150"/>
+   <frame tileid="20" duration="150"/>
+   <frame tileid="21" duration="150"/>
+   <frame tileid="56" duration="150"/>
+   <frame tileid="57" duration="150"/>
+   <frame tileid="58" duration="150"/>
+   <frame tileid="59" duration="150"/>
+   <frame tileid="60" duration="150"/>
+   <frame tileid="61" duration="150"/>
+   <frame tileid="96" duration="150"/>
+   <frame tileid="97" duration="150"/>
+   <frame tileid="98" duration="150"/>
+   <frame tileid="99" duration="150"/>
+   <frame tileid="100" duration="150"/>
+   <frame tileid="101" duration="150"/>
+   <frame tileid="136" duration="150"/>
+   <frame tileid="137" duration="150"/>
+   <frame tileid="138" duration="150"/>
+   <frame tileid="139" duration="150"/>
+   <frame tileid="140" duration="150"/>
+   <frame tileid="141" duration="150"/>
+  </animation>
+ </tile>
  <tile id="166">
   <properties>
    <property name="collision" type="bool" value="true"/>
