@@ -2,6 +2,7 @@
 import { defineComponent, computed, watch, watchEffect, ref, inject, onMounted } from "vue";
 import { useStore } from "@nanostores/vue";
 
+import { createMarketOrdersStore } from "../nanoeffects/MarketOrders";
 import { $currentUser, $userStorage } from "../nanostores/users.ts";
 
 import "@shoelace-style/shoelace/dist/components/button/button";
@@ -73,11 +74,6 @@ export default defineComponent({
       return props.properties.media_qty ?? null;
     });
 
-    const imgURL = computed(() => {
-      const lowerCase = header.value.toLowerCase();
-      return `/main/spritesheets/gfx/NFT/${lowerCase}.webp`;
-    });
-
     const basePrecision = computed(() => {
       // avoids blockchain asset query
       return props.properties.basePrecision ?? 5; // BTS has a precision of 5
@@ -106,6 +102,8 @@ export default defineComponent({
     watchEffect(async () => {
       if (beeteos.value || retry.value) {
         loading.value = true;
+
+        /*
         let res;
         try {
           res = await fetchOrderBook(blockchain.value, symbol.value, "BTS");
@@ -118,6 +116,33 @@ export default defineComponent({
           blockchainResponse.value = res;
         }
         loading.value = false;
+        */
+
+        const marketStore = createMarketOrdersStore([
+          blockchainResponse.value,
+          symbol.value,
+          blockchainResponse.value === "bitshares" ? "BTS" : "TEST",
+        ]);
+
+        const unsub = marketStore.subscribe((result) => {
+          if (result.error) {
+            loading.value = false;
+            console.error(result.error);
+          }
+
+          if (!result.loading) {
+            if (result.data) {
+              const res = result.data;
+              console.log({ res });
+              blockchainResponse.value = res;
+              loading.value = false;
+            }
+          }
+        });
+
+        return () => {
+          unsub();
+        };
       }
     });
 
@@ -127,15 +152,14 @@ export default defineComponent({
         var expiry = new Date();
         expiry.setMinutes(expiry.getMinutes() + 60);
 
-        const sellAmount = blockchainResponse.asks[0].base;
-        const buyAmount = blockchainResponse.asks[0].quote;
-        const userID = "1.2.x"; // TODO: REPLACE!
+        const sellAmount = blockchainResponse.value.asks[0].base;
+        const buyAmount = blockchainResponse.value.asks[0].quote;
 
         let res;
         try {
           res = await generateDeepLink(blockchain, "limit_order_create", [
             {
-              seller: userID,
+              seller: currentUser.value.id,
               amount_to_sell: {
                 amount: blockchainFloat(sellAmount, basePrecision).toFixed(0),
                 asset_id: baseAssetID,
@@ -148,6 +172,11 @@ export default defineComponent({
           ]);
         } catch (err) {
           console.error(err);
+        }
+
+        if (res) {
+          console.log({ res });
+          deeplink.value = res;
         }
       }
     });
@@ -175,7 +204,6 @@ export default defineComponent({
       acknowledgements,
       blockchain,
       header,
-      imgURL,
       filetype,
       media_qty,
       narrative,
@@ -207,11 +235,12 @@ export default defineComponent({
           "
         >
           <a
-            :href="`/main/spritesheets/gfx/NFT/${symbol}/${current_nft}.${filetype}`"
+            :href="`https://gateway.pinata.cloud/ipfs/${CID}/${current_nft}.${filetype}`"
             target="_blank"
           >
             <img
-              :src="`/main/spritesheets/gfx/NFT/${symbol}/${current_nft}.${filetype}`"
+              :src="`/main/spritesheets/gfx/NFT/${symbol}/${current_nft}_256x256.${filetype}`"
+              :id="`nft_${current_nft}_${symbol}`"
               width="300px"
               alt="NFT media"
             />
@@ -238,7 +267,7 @@ export default defineComponent({
         </div>
       </div>
       <div v-else style="display: flex; justify-content: center; align-items: center; height: 100%">
-        <img :src="imgURL" alt="NFT media" />
+        <img :src="`/main/spritesheets/gfx/NFT/${symbol}/0_256x256.${filetype}`" alt="NFT media" />
       </div>
       <div class="grid">
         <sl-button
@@ -395,7 +424,7 @@ export default defineComponent({
     </sl-dialog>
 
     <sl-dialog :open="broadcast">
-      <p>
+      <p v-if="blockchainResponse">
         Buying {{ blockchainResponse.asks[0].quote }} {{ blockchainResponse.quote }} from
         {{ blockchainResponse.asks[0].owner_name }} for {{ blockchainResponse.asks[0].base }}
         {{ blockchainResponse.base }}

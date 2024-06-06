@@ -141,6 +141,7 @@ export default defineComponent({
           <sl-button slot="footer" variant="neutral" @click="method = 'existing'">
             Previously used accounts
           </sl-button>
+          <sl-button slot="footer" variant="neutral" @click="chain = null">Back</sl-button>
         </div>
       </div>
 
@@ -183,7 +184,7 @@ export default defineComponent({
           slot="footer"
           variant="primary"
           @click="
-            setCurrentUser(searchResult.username, searchResult.id, searchResult.referrer, chain);
+            setCurrentUser(searchResult.name, searchResult.id, searchResult.referrer, chain);
             open = false;
           "
         >
@@ -199,22 +200,28 @@ export default defineComponent({
               : "Selecting a previously used Bitshares testnet (TEST) account"
           }}
         </p>
-
-        <div v-if="storedUsers && storedUsers.users && storedUsers.users.length > 0">
+        <div
+          v-if="
+            storedUsers &&
+            storedUsers.users &&
+            storedUsers.users.length > 0 &&
+            storedUsers.users.filter((user) => user.chain === chain)
+          "
+        >
           <p>Choose an account from the list below:</p>
-          <ul>
-            <li v-for="user in storedUsers.users" :key="user.id">
-              <sl-button
-                variant="neutral"
-                @click="
-                  setCurrentUser(user.username, user.id, user.referrer, chain);
-                  open = false;
-                "
-              >
-                {{ user.username }} ({{ user.id }})
-              </sl-button>
-            </li>
-          </ul>
+
+          <sl-button
+            v-for="user in storedUsers.users.filter((user) => user.chain === chain)"
+            @click="
+              setCurrentUser(user.username, user.id, user.referrer, chain);
+              open = false;
+            "
+            :key="user.id"
+            variant="neutral"
+            style="margin: 5px"
+          >
+            {{ user.username }} ({{ user.id }})
+          </sl-button>
 
           <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
         </div>

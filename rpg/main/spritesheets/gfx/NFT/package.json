@@ -1,0 +1,11 @@
+{
+  "name": "image_resizer",
+  "scripts": {},
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {}
+}
