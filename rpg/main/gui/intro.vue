@@ -36,15 +36,6 @@ export default defineComponent({
     const searchResult = ref(null);
     const searchError = ref(false);
 
-    /*
-    const users = ref([]);
-    onMounted(() => {
-      const unsubscribe = $userStorage.subscribe((data) => {
-        users.value = data.users;
-      });
-      return unsubscribe;
-    });
-    */
     const storedUsers = useStore($userStorage);
 
     async function search() {
@@ -222,8 +213,6 @@ export default defineComponent({
           >
             {{ user.username }} ({{ user.id }})
           </sl-button>
-
-          <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
         </div>
         <div v-else>
           <p>No previously used accounts found, please use a new account.</p>
@@ -231,6 +220,7 @@ export default defineComponent({
             Find account
           </sl-button>
         </div>
+        <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
       </div>
     </sl-dialog>
   </div>

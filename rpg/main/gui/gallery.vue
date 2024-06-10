@@ -10,7 +10,6 @@ import "@shoelace-style/shoelace/dist/components/dialog/dialog";
 import "@shoelace-style/shoelace/dist/components/spinner/spinner";
 import "@shoelace-style/shoelace/dist/components/input/input";
 
-import { fetchOrderBook } from "../bts/queries";
 import { generateDeepLink } from "../bts/generateDeepLink";
 import { humanReadableFloat, blockchainFloat } from "../bts/common";
 
@@ -81,7 +80,7 @@ export default defineComponent({
 
     const quotePrecision = computed(() => {
       // avoids blockchain asset query
-      return props.properties.quotePrecision ?? 1; // Non-fungible tokens usually have a precision of 1
+      return props.properties.quotePrecision ?? 0; // NFTs have a precision of 0 (if whole indivisible units)
     });
 
     const baseAssetID = computed(() => {
@@ -94,8 +93,12 @@ export default defineComponent({
       return props.properties.quoteAssetID ?? "";
     });
 
+    const CID = computed(() => {
+      return props.properties.CID;
+    });
+
     const retry = ref(0);
-    const blockchainResponse = ref(null);
+    const chainResult = ref(null);
     const loading = ref(false);
 
     // Fetching the latest order book data:
@@ -103,25 +106,10 @@ export default defineComponent({
       if (beeteos.value || retry.value) {
         loading.value = true;
 
-        /*
-        let res;
-        try {
-          res = await fetchOrderBook(blockchain.value, symbol.value, "BTS");
-        } catch (err) {
-          console.error(err);
-        }
-
-        if (res) {
-          console.log({ res });
-          blockchainResponse.value = res;
-        }
-        loading.value = false;
-        */
-
         const marketStore = createMarketOrdersStore([
-          blockchainResponse.value,
+          blockchain.value,
           symbol.value,
-          blockchainResponse.value === "bitshares" ? "BTS" : "TEST",
+          blockchain.value === "bitshares" ? "BTS" : "TEST",
         ]);
 
         const unsub = marketStore.subscribe((result) => {
@@ -134,7 +122,7 @@ export default defineComponent({
             if (result.data) {
               const res = result.data;
               console.log({ res });
-              blockchainResponse.value = res;
+              chainResult.value = res;
               loading.value = false;
             }
           }
@@ -148,28 +136,44 @@ export default defineComponent({
 
     // Generating a deeplink for buying the lowest ask
     watchEffect(async () => {
-      if (broadcast.value && blockchainResponse.value) {
+      if (broadcast.value && chainResult.value) {
+        if (!chainResult.value.asks || !chainResult.value.asks.length) {
+          console.log("No asks available for this NFT.");
+          return;
+        }
         var expiry = new Date();
         expiry.setMinutes(expiry.getMinutes() + 60);
 
-        const sellAmount = blockchainResponse.value.asks[0].base;
-        const buyAmount = blockchainResponse.value.asks[0].quote;
+        const operation = {
+          seller: currentUser.value.id,
+          amount_to_sell: {
+            amount: parseInt(
+              blockchainFloat(
+                parseFloat(chainResult.value.asks[0].base),
+                basePrecision.value
+              ).toFixed(0)
+            ),
+            asset_id: baseAssetID.value,
+          },
+          min_to_receive: {
+            amount: parseInt(
+              blockchainFloat(
+                parseFloat(chainResult.value.asks[0].quote),
+                quotePrecision.value
+              ).toFixed(0)
+            ),
+            asset_id: quoteAssetID.value,
+          },
+          expiration: expiry,
+          fill_or_kill: false,
+          extensions: [],
+        };
+
+        console.log({ operation });
 
         let res;
         try {
-          res = await generateDeepLink(blockchain, "limit_order_create", [
-            {
-              seller: currentUser.value.id,
-              amount_to_sell: {
-                amount: blockchainFloat(sellAmount, basePrecision).toFixed(0),
-                asset_id: baseAssetID,
-              },
-              min_to_receive: {
-                amount: blockchainFloat(buyAmount, quotePrecision).toFixed(0),
-                asset_id: quoteAssetID,
-              },
-            },
-          ]);
+          res = await generateDeepLink(blockchain.value, "limit_order_create", [operation]);
         } catch (err) {
           console.error(err);
         }
@@ -179,6 +183,14 @@ export default defineComponent({
           deeplink.value = res;
         }
       }
+    });
+
+    const mainImage = computed(() => {
+      return `/main/spritesheets/gfx/NFT/${symbol}/0_256x256.${filetype}`;
+    });
+
+    const currentImage = computed(() => {
+      return `/main/spritesheets/gfx/NFT/${symbol}/${current_nft}_256x256.${filetype}`;
     });
 
     return {
@@ -194,11 +206,16 @@ export default defineComponent({
       currentUser,
       storedUsers,
       // Blockchain data:
-      blockchainResponse,
+      chainResult,
       deeplink,
       // Static asset data:
       basePrecision,
+      baseAssetID,
       quotePrecision,
+      quoteAssetID,
+      // generated urls
+      currentImage,
+      mainImage,
       // NFT Properties:
       artist,
       acknowledgements,
@@ -209,6 +226,7 @@ export default defineComponent({
       narrative,
       symbol,
       tags,
+      CID,
       // Functions for in-JSX use:
       humanReadableFloat,
     };
@@ -234,18 +252,14 @@ export default defineComponent({
             height: 100%;
           "
         >
-          <a
-            :href="`https://gateway.pinata.cloud/ipfs/${CID}/${current_nft}.${filetype}`"
-            target="_blank"
-          >
+          <a :href="`https://gateway.pinata.cloud/ipfs/${CID}`" target="_blank">
             <img
-              :src="`/main/spritesheets/gfx/NFT/${symbol}/${current_nft}_256x256.${filetype}`"
+              :src="currentImage"
               :id="`nft_${current_nft}_${symbol}`"
               width="300px"
               alt="NFT media"
             />
           </a>
-          <br />
           <p>{{ current_nft + 1 }} of {{ media_qty }}</p>
         </div>
         <div class="smallGrid">
@@ -267,7 +281,7 @@ export default defineComponent({
         </div>
       </div>
       <div v-else style="display: flex; justify-content: center; align-items: center; height: 100%">
-        <img :src="`/main/spritesheets/gfx/NFT/${symbol}/0_256x256.${filetype}`" alt="NFT media" />
+        <img :src="mainImage" alt="NFT media" />
       </div>
       <div class="grid">
         <sl-button
@@ -330,6 +344,7 @@ export default defineComponent({
         </a>
 
         <sl-button
+          v-if="currentUser.chain === blockchain"
           slot="footer"
           variant="neutral"
           @click="
@@ -382,14 +397,14 @@ export default defineComponent({
         <sl-spinner></sl-spinner>
       </div>
 
-      <div v-if="!loading && blockchainResponse">
-        <span v-if="!blockchainResponse.asks || !blockchainResponse.asks.length">
+      <div v-if="!loading && chainResult">
+        <span v-if="!chainResult.asks || !chainResult.asks.length">
           This NFT is currently not for sale, try again later.
         </span>
-        <span v-for="ask in blockchainResponse.asks">
+        <span v-for="ask in chainResult.asks">
           <p :id="ask.id">
-            {{ ask.owner_name }} is selling {{ ask.quote }} {{ blockchainResponse.quote }} for
-            {{ ask.base }} {{ blockchainResponse.base }}
+            {{ ask.owner_name }} is selling {{ ask.quote }} {{ chainResult.quote }} for
+            {{ ask.base }} {{ chainResult.base }}
           </p>
         </span>
         <sl-button
@@ -404,7 +419,7 @@ export default defineComponent({
       </div>
 
       <div
-        v-if="!loading && !blockchainResponse"
+        v-if="!loading && !chainResult"
         label="Proceeding with BeetEOS broadcast"
         class="dialog-overview"
       >
@@ -424,10 +439,10 @@ export default defineComponent({
     </sl-dialog>
 
     <sl-dialog :open="broadcast">
-      <p v-if="blockchainResponse">
-        Buying {{ blockchainResponse.asks[0].quote }} {{ blockchainResponse.quote }} from
-        {{ blockchainResponse.asks[0].owner_name }} for {{ blockchainResponse.asks[0].base }}
-        {{ blockchainResponse.base }}
+      <p v-if="chainResult">
+        Buying {{ chainResult.asks[0].quote }} {{ chainResult.quote }} from
+        {{ chainResult.asks[0].owner_name }} for {{ chainResult.asks[0].base }}
+        {{ chainResult.base }}
       </p>
 
       <div v-if="!deeplink">
@@ -435,8 +450,15 @@ export default defineComponent({
         <sl-spinner></sl-spinner>
       </div>
       <div v-else>
-        <p>TODO: Proceed with your BeetEOS deeplink below!</p>
-        <a href="#">
+        <p>
+          Your BeetEOS raw deeplink is ready. Launch BeetEOS, navigate to the raw deeplink page,
+          allow sufficient operations then click the following button to proceed.
+        </p>
+        <a
+          :href="`rawbeeteos://api?chain=${
+            currentUser.chain === 'bitshares' ? 'BTS' : 'BTS_TEST'
+          }&request=${deeplink}`"
+        >
           <sl-button slot="footer" variant="neutral">Broadcast to BeetEOS!</sl-button>
         </a>
       </div>

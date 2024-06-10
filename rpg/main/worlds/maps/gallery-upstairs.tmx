@@ -95,7 +95,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="5" name="Object Layer 1">
+ <objectgroup id="5" name="Object Layer 1" visible="0">
   <object id="1" name="Start Position" type="start" x="80.466" y="502.382">
    <point/>
   </object>
@@ -188,576 +188,864 @@
   </object>
   <object id="124" name="gallery_0011" x="256.578" y="431.847" width="31.25" height="55.4167">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="125" name="gallery_0012" x="320.703" y="431.972" width="31.25" height="55.4167">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="126" name="gallery_0013" x="384.536" y="432.222" width="31.5833" height="55.0833">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="127" name="gallery_0014" x="448.604" y="431.782" width="31.25" height="54.7197">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="128" name="gallery_0015" x="512.286" y="431.722" width="31.9167" height="55.6894">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="129" name="gallery_0016" x="576.619" y="431.711" width="31.25" height="55.356">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="130" name="gallery_0017" x="640.619" y="431.711" width="31.25" height="55.6894">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="131" name="gallery_0018" x="704.161" y="432.044" width="31.9167" height="55.356">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="132" name="gallery_0001" x="256.411" y="560.118" width="31.75" height="55.25">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="133" name="gallery_0002" x="320.286" y="559.743" width="31.75" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="134" name="gallery_0003" x="384.536" y="559.493" width="32" height="56.25">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="135" name="gallery_0004" x="448.604" y="560.469" width="31.5" height="55.1364">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="136" name="gallery_0005" x="512.286" y="560.493" width="32" height="55.0227">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="137" name="gallery_0006" x="576.536" y="559.981" width="31.5" height="56.0227">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="138" name="gallery_0007" x="640.036" y="559.981" width="32.25" height="55.7727">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="139" name="gallery_0008" x="704.161" y="560.231" width="32" height="55.2727">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="140" name="gallery_0021" x="256.744" y="303.91" width="31.25" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="141" name="gallery_0022" x="320.536" y="304.035" width="30.5833" height="55.0833">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="142" name="gallery_0023" x="384.369" y="303.618" width="31.25" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="143" name="gallery_0024" x="448.771" y="303.844" width="30.9167" height="55.0531">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="144" name="gallery_0025" x="512.453" y="304.451" width="31.5833" height="54.6894">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="145" name="gallery_0026" x="576.453" y="303.773" width="31.25" height="55.356">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="146" name="gallery_0027" x="640.786" y="303.106" width="30.9167" height="55.6894">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="147" name="gallery_0028" x="704.328" y="304.106" width="31.9167" height="55.6894">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="148" name="gallery_0031" x="256.468" y="176.129" width="31.6136" height="55.3864">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="149" name="gallery_0032" x="320.32" y="175.891" width="31.7955" height="55.3864">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="150" name="gallery_0033" x="384.275" y="175.777" width="31.7955" height="55.2045">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="151" name="gallery_0034" x="447.979" y="176.003" width="31.9773" height="55.2046">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="152" name="gallery_0035" x="512.388" y="176.095" width="31.6136" height="55.0227">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="153" name="gallery_0036" x="576.297" y="175.901" width="31.9773" height="55.0227">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="154" name="gallery_0037" x="640.116" y="175.811" width="32.3409" height="55.3863">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="155" name="gallery_0038" x="704.081" y="175.901" width="31.9773" height="55.0227">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="156" name="gallery_0041" x="256.172" y="48.1298" width="31.4318" height="55.5682">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="157" name="gallery_0042" x="320.297" y="47.8911" width="31.7955" height="55.5682">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="158" name="gallery_0043" x="384.343" y="47.7775" width="31.6136" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="159" name="gallery_0044" x="448.229" y="47.8217" width="31.9773" height="55.9319">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="160" name="gallery_0045" x="512.093" y="48.0048" width="32.1591" height="55.5682">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="161" name="gallery_0046" x="576.275" y="47.8109" width="32.1591" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="162" name="gallery_0047" x="639.729" y="47.9019" width="32.3409" height="55.9318">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="163" name="gallery_0048" x="704.241" y="47.9928" width="31.7955" height="55.3863">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="164" name="gallery_0009" x="512.445" y="687.919" width="31.5" height="56">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="165" name="gallery_0000" x="576.331" y="687.987" width="32.25" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="166" name="gallery_0019" x="384.218" y="687.987" width="31.75" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="167" name="gallery_0010" x="448.354" y="688.305" width="31.5" height="55.5">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="168" name="gallery_0029" x="256.15" y="688.214" width="31.75" height="55.5">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="169" name="gallery_0020" x="319.786" y="688.032" width="32.5" height="55.5">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="170" name="gallery_0050" x="640.208" y="688.125" width="32.25" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>
   </object>
   <object id="171" name="gallery_0051" x="703.792" y="688.042" width="32.25" height="55.75">
    <properties>
+    <property name="CID" value=""/>
     <property name="acknowledgements" value=""/>
     <property name="artist" value=""/>
+    <property name="basePrecision" type="int" value="5"/>
     <property name="blockchain" value="bitshares"/>
     <property name="component" value="gallery"/>
+    <property name="filetype" value=""/>
     <property name="header" value=""/>
+    <property name="media_qty" type="int" value="1"/>
     <property name="narrative" value=""/>
+    <property name="quoteAssetID" value="1.2.x"/>
+    <property name="quotePrecision" type="int" value="0"/>
     <property name="symbol" value=""/>
     <property name="tags" value=""/>
    </properties>

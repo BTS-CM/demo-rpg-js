@@ -142,20 +142,20 @@
   </object>
   <object id="24" name="computer-1" x="514" y="161.5" width="28" height="28.5">
    <properties>
-    <property name="component" value="player-computer"/>
-    <property name="header" value="RPG JS tools"/>
+    <property name="component" value="computer"/>
+    <property name="header" value="Under development"/>
    </properties>
   </object>
   <object id="25" name="computer-2" x="610" y="159.75" width="28" height="28.5">
    <properties>
-    <property name="component" value="eos-ram-computer"/>
-    <property name="header" value="EOS RAM computer"/>
+    <property name="component" value="computer"/>
+    <property name="header" value="Under development"/>
    </properties>
   </object>
   <object id="26" name="computer-3" x="706" y="159.75" width="28" height="28.5">
    <properties>
-    <property name="component" value="bts-computer"/>
-    <property name="header" value="Bitshares computer"/>
+    <property name="component" value="computer"/>
+    <property name="header" value="Under development"/>
    </properties>
   </object>
   <object id="27" name="computer-4" x="513.5" y="225.25" width="28" height="28.5">
