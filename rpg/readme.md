@@ -1,46 +1,42 @@
 # RPG JS Game
 
-This is a project template for [RPGJS](https://rpgjs.dev) apps. It lives at https://github.com/rpgjs/starter.
+This is a [RPGJS](https://rpgjs.dev) framework based demo app. It was based on the starter template: https://github.com/rpgjs/starter.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit rpgjs/starter rpg-app
-cd rpg-app
-```
 ## Get started
 
-Install the dependencies...
+Install the dependencies:
 
 ```bash
-cd rpg-app
-npm install
-npm run dev
+bun install
 ```
 
-Navigate to [localhost:3000](http://localhost:3000). You should see your game running. Edit a file in `src`, save it, and reload the page to see your changes.
+Create a `.env` file in this folder, containing `RPG_TYPE=rpg`
 
-> Launch in RPG mode with `RPG_TYPE=rpg npm run dev`
+Run the project:
+
+```bash
+bun run dev
+```
+
+Navigate to [localhost:3000](http://localhost:3000). You should see the game running.
 
 ## Production
 
 ### Build with NodeJS
 
-```bash
-NODE_ENV=production npm run build
-```
+Add the following to your `.env` file:
 
-### Build with Docker
+`NODE_ENV=production`
 
-```bash
-sudo docker build -t rpg .
-sudo docker run -p 3000:3000 -d rpg
-```
+Then run the following command:
+
+`bun run build`
 
 ## Resources
 
 [Documentation](https://docs.rpgjs.dev)
 [Community Help](https://community.rpgjs.dev)
+[Tiled forum](https://discourse.mapeditor.org/latest)
 
 ## Credits for Sample package assets
 
