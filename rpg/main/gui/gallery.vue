@@ -186,11 +186,11 @@ export default defineComponent({
     });
 
     const mainImage = computed(() => {
-      return `/main/spritesheets/gfx/NFT/${symbol}/0_256x256.${filetype}`;
+      return `/main/spritesheets/gfx/NFT/${symbol.value}/0_256x256.${filetype.value}`;
     });
 
     const currentImage = computed(() => {
-      return `/main/spritesheets/gfx/NFT/${symbol}/${current_nft}_256x256.${filetype}`;
+      return `/main/spritesheets/gfx/NFT/${symbol.value}/${current_nft.value}_256x256.${filetype.value}`;
     });
 
     return {
