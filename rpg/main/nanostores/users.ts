@@ -111,4 +111,4 @@ function removeUser(id: string) {
   }
 }
 
-export { $currentUser, setCurrentUser, eraseCurrentUser, $userStorage, addUser, removeUser };
+export { User, $currentUser, setCurrentUser, eraseCurrentUser, $userStorage, addUser, removeUser };

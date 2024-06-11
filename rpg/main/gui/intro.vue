@@ -1,5 +1,6 @@
 <script>
-import { defineComponent, computed, watchEffect, ref, onMounted, inject } from "vue";
+import { RpgPlayer } from "@rpgjs/server";
+import { defineComponent, computed, watchEffect, ref, onMounted, inject, defineProps, toRaw } from "vue";
 import { useStore } from "@nanostores/vue";
 
 import {
@@ -9,15 +10,8 @@ import {
   $userStorage,
   removeUser,
 } from "../nanostores/users.ts";
-import { createUserSearchStore } from "../nanoeffects/UserSearch";
 
-/*
-interface SearchResponse {
-  id: string;
-  username: string;
-  referrer: string;
-}
-*/
+import { createUserSearchStore } from "../nanoeffects/UserSearch";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -27,6 +21,8 @@ export default defineComponent({
   name: "intro",
   setup() {
     const open = ref(true);
+   
+    const rpgGuiClose = inject("rpgGuiClose");
 
     const chain = ref();
     const method = ref();
@@ -76,15 +72,27 @@ export default defineComponent({
       }
     }
 
+    async function closeGUI(name, id, referrer, chain) {
+      setCurrentUser(name, id, referrer, chain);
+      
+      try {
+        await rpgGuiClose('intro');
+      } catch (error) {
+        console.error(error);
+      }
+      
+      open.value = false;
+    }
+
     return {
       // basic dialog functionality
       open,
       chain,
       handleCloseRequest,
+      closeGUI,
       // mode and storage
       method,
       storedUsers,
-      setCurrentUser,
       // account search functionality
       inputText,
       inProgress,
@@ -157,7 +165,7 @@ export default defineComponent({
 
         <div class="smallGrid">
           <sl-button slot="footer" variant="primary" @click="search">Search</sl-button>
-          <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
+          <sl-button slot="footer" variant="neutral" @click="method = null; searchResult = null; searchError = null;">Back</sl-button>
         </div>
         <sl-divider v-if="searchResult"></sl-divider>
       </div>
@@ -175,8 +183,7 @@ export default defineComponent({
           slot="footer"
           variant="primary"
           @click="
-            setCurrentUser(searchResult.name, searchResult.id, searchResult.referrer, chain);
-            open = false;
+            closeGUI(searchResult.name, searchResult.id, searchResult.referrer, chain);
           "
         >
           Proceed with this account
@@ -204,8 +211,7 @@ export default defineComponent({
           <sl-button
             v-for="user in storedUsers.users.filter((user) => user.chain === chain)"
             @click="
-              setCurrentUser(user.username, user.id, user.referrer, chain);
-              open = false;
+              closeGUI(user.username, user.id, user.referrer, chain);
             "
             :key="user.id"
             variant="neutral"
@@ -220,8 +226,9 @@ export default defineComponent({
             Find account
           </sl-button>
         </div>
-        <sl-button slot="footer" variant="neutral" @click="method = null">Back</sl-button>
+        <sl-button slot="footer" variant="neutral" @click="method = null;">Back</sl-button>
       </div>
+
     </sl-dialog>
   </div>
 </template>
