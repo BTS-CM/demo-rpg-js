@@ -6,21 +6,20 @@ import { Item } from '@rpgjs/database'
     id: 'book',
     name: 'Book',
     description: 'A readable book',
-    price: 200
+    price: 200,
+    consumable: true
 })
 export default class Book {
     onAdd(player: RpgPlayer) {
 
     }
-
-    onUse(player: RpgPlayer) {
-
+    
+    async onUse(player: RpgPlayer) {
+        // Consumable to trigger this event
+        player.addItem('book', 1); // avoid losing the book
+        await player.gui('book').open({}, { waitingAction: true });
     }
-
-    onUseFailed(player: RpgPlayer) {
-
-    }
-
+    
     onRemove(player: RpgPlayer) {
 
     }

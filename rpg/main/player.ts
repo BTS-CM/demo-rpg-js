@@ -3,9 +3,7 @@ import {
   $currentUser,
   User,
 } from "./nanostores/users";
-
 import { createUserBalancesStore } from "./nanoeffects/UserBalances";
-
 import { humanReadableFloat } from "./bts/common";
 
 const _allowedVariables = ["AT_COMPUTER", "AT_MARKET", "AFTER_INTRO", "AT_GALLERY"];
@@ -98,6 +96,7 @@ async function playerGold(player: RpgPlayer, usr: User) {
 const player: RpgPlayerHooks = {
   onConnected(player: RpgPlayer) {
     player.name = "";
+    player.setGraphic("hero");
     player.setComponentsTop(Components.text("{name}"));
   },
   async onInput(player: RpgPlayer, { input }) {
@@ -131,11 +130,11 @@ const player: RpgPlayerHooks = {
       await player.showText(retrievedVariable.properties.msg);
     }
 
+    /*
     if (input === Control.Action) {
       console.log({ x: player.position.x, y: player.position.y });
     }
-
-    //console.log({ x: player.position.x, y: player.position.y });
+    */
   },
   async onInShape(player: RpgPlayer, shape: any) {
     if (shape.name.includes("wall") || shape.name.includes("collision")) {
@@ -221,9 +220,8 @@ const player: RpgPlayerHooks = {
     await player.gui("intro").open({}, {waitingAction: true});
 
     const usr = $currentUser.get();
-
     await playerGold(player, usr);
-    
+
     player.setVariable("AFTER_INTRO", true);
   },
 };

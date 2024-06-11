@@ -95,7 +95,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <objectgroup id="5" name="Object Layer 1" visible="0">
+ <objectgroup id="5" name="Object Layer 1">
   <object id="1" name="Start Position" type="start" x="80.466" y="502.382">
    <point/>
   </object>
@@ -181,7 +181,7 @@
     <property name="collision" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="123" name="teleport2" x="45.8636" y="261.591" width="69.2727" height="54.8182">
+  <object id="123" name="teleport2" x="45.8636" y="261.591" width="69.2727" height="42.3182">
    <properties>
     <property name="destination" value="gallery-offices"/>
    </properties>

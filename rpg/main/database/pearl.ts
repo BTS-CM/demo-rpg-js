@@ -11,15 +11,6 @@ export default class Pearl {
     onAdd(player: RpgPlayer) {
 
     }
-
-    onUse(player: RpgPlayer) {
-
-    }
-
-    onUseFailed(player: RpgPlayer) {
-
-    }
-
     onRemove(player: RpgPlayer) {
 
     }

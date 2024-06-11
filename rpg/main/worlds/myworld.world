@@ -9,10 +9,10 @@
         },
         {
             "fileName": "maps/shop-1.tmx",
-            "height": 320,
-            "width": 320,
+            "height": 480,
+            "width": 480,
             "x": 2848,
-            "y": -768
+            "y": -928
         },
         {
             "fileName": "maps/cellar-1.tmx",

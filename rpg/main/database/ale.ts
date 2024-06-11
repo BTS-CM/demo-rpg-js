@@ -25,4 +25,8 @@ export default class Ale {
     onRemove(player: RpgPlayer) {
         player.showNotification('You have removed an ale from your inventory')
     }
+
+    onAction(player: RpgPlayer) {
+        player.showText('You see a bottle of ale')
+    }
 }

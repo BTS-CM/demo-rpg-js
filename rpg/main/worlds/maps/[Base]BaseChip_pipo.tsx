@@ -610,7 +610,7 @@
  </tile>
  <tile id="165">
   <properties>
-   <property name="collision" type="bool" value="true"/>
+   <property name="collision" type="bool" value="false"/>
   </properties>
  </tile>
  <tile id="166">
