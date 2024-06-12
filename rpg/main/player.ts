@@ -1,10 +1,7 @@
 import { RpgPlayer, type RpgPlayerHooks, Control, Components } from "@rpgjs/server";
-import {
-  $currentUser,
-  User,
-} from "./nanostores/users";
-import { createUserBalancesStore } from "./nanoeffects/UserBalances";
-import { humanReadableFloat } from "./bts/common";
+
+import { $currentUser, User } from "./nanostores/users";
+import { playerGold } from "./common/player";
 
 const _allowedVariables = ["AT_COMPUTER", "AT_MARKET", "AFTER_INTRO", "AT_GALLERY"];
 const _allowedComponents = [
@@ -15,7 +12,6 @@ const _allowedComponents = [
   "market",
   "gallery",
 ];
-
 
 // Ask the user if they want to launch a GUI
 async function promptPlayer(player: RpgPlayer, variable: string, prompt: string) {
@@ -65,38 +61,9 @@ async function promptPlayer(player: RpgPlayer, variable: string, prompt: string)
   await player.showAttachedGui();
 }
 
-async function playerGold(player: RpgPlayer, usr: User) {
-  if (!usr || !usr.chain) {
-    return;
-  }
-
-  const userBalanceStore = createUserBalancesStore([usr.chain, usr.id]);
-
-  const unsub = userBalanceStore.subscribe((result) => {
-    if (result.error) {
-      console.error(result.error);
-    }
-
-    if (!result.loading) {
-      if (result.data) {
-        const res = result.data as any[];
-        const btsBalance = res.filter((x) => x.asset_id === "1.3.0");
-        if (btsBalance.length) {
-          player.gold = parseInt(humanReadableFloat(btsBalance[0].amount, 5).toFixed(0));
-        }
-      }
-    }
-  });
-
-  return () => {
-    unsub();
-  };
-}
-
 const player: RpgPlayerHooks = {
   onConnected(player: RpgPlayer) {
     player.name = "";
-    player.setGraphic("male-69");
     player.setComponentsTop(Components.text("{name}"));
   },
   async onInput(player: RpgPlayer, { input }) {
@@ -217,10 +184,15 @@ const player: RpgPlayerHooks = {
       return;
     }
 
+
     await player.gui("intro").open({}, {waitingAction: true, blockPlayerInput: true});
 
     const usr = $currentUser.get();
-    await playerGold(player, usr);
+
+    await playerGold(player, usr); // assign gold to player
+
+    player.setGraphic(usr.sprite);
+    player.addItem("accountChanger", 1); // default user item
 
     player.setVariable("AFTER_INTRO", true);
   },

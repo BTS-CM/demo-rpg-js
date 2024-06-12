@@ -17,16 +17,17 @@ export default class CharaEvent extends RpgEvent {
 
     async onAction(player: RpgPlayer) {
         const job = this.properties.job;
-        
-        await player.showText(`Hello: ${job}`);
-            
-        player.callShop([
-            Potion,
-            Ale,
-            Book,
-            Cheese,
-            Ham,
-            Pearl
-        ]);
+        if (job === "shop-1") {
+            await player.showText(`Hello, welcome to my shop! What would you like to buy or sell?`);
+    
+            player.callShop([
+                Potion,
+                Ale,
+                Book,
+                Cheese,
+                Ham,
+                Pearl
+            ]);
+        }
     }
 }

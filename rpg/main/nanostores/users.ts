@@ -5,6 +5,7 @@ type User = {
   username: string;
   id: string;
   chain: string;
+  sprite: string;
   referrer: string;
 };
 
@@ -15,26 +16,24 @@ const $currentUser = map<User>({
   username: "",
   id: "",
   chain: "",
+  sprite: "",
   referrer: "",
 });
 
 /**
  * Setting the current user in a non persistent nanostore map
- * @param username
- * @param id
- * @param referrer
- * @param chain
  */
-function setCurrentUser(username: string, id: string, referrer: string, chain: string) {
+function setCurrentUser(username: string, id: string, referrer: string, sprite: string, chain: string) {
   $currentUser.set({
     username,
     id,
     chain,
+    sprite,
     referrer,
   });
 
   try {
-    addUser(username, id, referrer, chain);
+    addUser(username, id, referrer, sprite, chain);
   } catch (e) {
     console.log(e);
   }
@@ -45,6 +44,7 @@ function eraseCurrentUser() {
     username: "",
     id: "",
     chain: "",
+    sprite: "",
     referrer: "",
   });
 }
@@ -80,13 +80,11 @@ const $userStorage = persistentMap<StoredUsers>(
 
 /**
  * Add an user to the persistent user store
- * @param username
- * @param id
- * @param chain
  */
-function addUser(username: string, id: string, referrer: string, chain: string) {
+function addUser(username: string, id: string, referrer: string, sprite: string, chain: string) {
   const users = $userStorage.get().users;
-  const user = { username, id, referrer, chain };
+  const user = { username, id, referrer, sprite, chain };
+  console.log({user})
   $userStorage.setKey("lastAccount", [user]);
   if (users.find((user) => user.id === id)) {
     //console.log("Using existing user");
@@ -98,7 +96,6 @@ function addUser(username: string, id: string, referrer: string, chain: string) 
 
 /**
  * Removing a single user from the persistent user store
- * @param id
  */
 function removeUser(id: string) {
   const users = $userStorage.get().users;
