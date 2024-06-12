@@ -96,7 +96,7 @@ async function playerGold(player: RpgPlayer, usr: User) {
 const player: RpgPlayerHooks = {
   onConnected(player: RpgPlayer) {
     player.name = "";
-    player.setGraphic("hero");
+    player.setGraphic("male-69");
     player.setComponentsTop(Components.text("{name}"));
   },
   async onInput(player: RpgPlayer, { input }) {
@@ -217,7 +217,7 @@ const player: RpgPlayerHooks = {
       return;
     }
 
-    await player.gui("intro").open({}, {waitingAction: true});
+    await player.gui("intro").open({}, {waitingAction: true, blockPlayerInput: true});
 
     const usr = $currentUser.get();
     await playerGold(player, usr);
