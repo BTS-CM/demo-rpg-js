@@ -7,7 +7,6 @@ export default defineComponent({
   name: "player-computer",
   setup() {
     const rpgCurrentPlayer = inject("rpgCurrentPlayer");
-    console.log({ rpgCurrentPlayer });
     const open = ref(true);
     return {
       open,

@@ -114,43 +114,37 @@
   <object id="17" name="market_01" x="189.318" y="220.932" width="36.8864" height="38.1818">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="5"/>
-    <property name="header" value="cheese"/>
+    <property name="item" value="cheese"/>
    </properties>
   </object>
   <object id="18" name="market_02" x="253.75" y="220.875" width="36.3485" height="38.6364">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="5"/>
-    <property name="header" value="ale"/>
+    <property name="item" value="ale"/>
    </properties>
   </object>
   <object id="19" name="market_03" x="317.315" y="221.091" width="37.3901" height="38.5114">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="10"/>
-    <property name="header" value="ham"/>
+    <property name="item" value="ham"/>
    </properties>
   </object>
   <object id="20" name="market_04" x="189.502" y="156.795" width="37" height="39.5">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="5"/>
-    <property name="header" value="potion"/>
+    <property name="item" value="potion"/>
    </properties>
   </object>
   <object id="21" name="market_05" x="252.657" y="156.613" width="38.144" height="40">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="10"/>
-    <property name="header" value="pearl"/>
+    <property name="item" value="pearl"/>
    </properties>
   </object>
   <object id="22" name="market_06" x="316.968" y="156.704" width="38.2651" height="40.4546">
    <properties>
     <property name="component" value="market"/>
-    <property name="gold" value="10"/>
-    <property name="header" value="book"/>
+    <property name="item" value="book"/>
    </properties>
   </object>
   <object id="23" name="collision-0008" x="192.833" y="288.375" width="31" height="25.25">

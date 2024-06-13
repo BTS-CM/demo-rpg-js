@@ -1,5 +1,5 @@
 import { nanoquery } from "@nanostores/query";
-import Apis from "../bts/ws/ApiInstances.js";
+import Apis from "../../bts/ws/ApiInstances";
 
 async function accountSearch(chain: String, search_string: String) {
   return new Promise(async (resolve, reject) => {

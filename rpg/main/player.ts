@@ -1,4 +1,5 @@
 import { RpgPlayer, type RpgPlayerHooks, Control, Components } from "@rpgjs/server";
+import { RpgGui } from '@rpgjs/client'
 
 import { $currentUser, User } from "./nanostores/users";
 import { playerGold } from "./common/player";
@@ -49,7 +50,10 @@ async function promptPlayer(player: RpgPlayer, variable: string, prompt: string)
     return;
   }
 
-  if (player.gui(retrievedVariable.properties.component)) {
+  if (
+    RpgGui.exists(retrievedVariable.properties.component) || 
+    player.gui(retrievedVariable.properties.component)
+  ) {
     console.log("Closing previous GUI");
     await player.gui(retrievedVariable.properties.component).close();
     await player.hideAttachedGui();
@@ -57,7 +61,8 @@ async function promptPlayer(player: RpgPlayer, variable: string, prompt: string)
 
   await player
     .gui(retrievedVariable.properties.component)
-    .open({ properties: retrievedVariable.properties });
+    .open({ properties: retrievedVariable.properties, player }, { waitingAction: true });
+
   await player.showAttachedGui();
 }
 
@@ -72,7 +77,7 @@ const player: RpgPlayerHooks = {
     }
 
     if (input === Control.Action && player.getVariable("AT_MARKET")) {
-      await promptPlayer(player, "AT_MARKET", "Want to buy this item?");
+      await promptPlayer(player, "AT_MARKET", "Want to evaluate this item?");
     }
 
     if (input === Control.Action && player.getVariable("AT_GALLERY")) {
@@ -142,7 +147,7 @@ const player: RpgPlayerHooks = {
 
     if (shape.name.includes("market")) {
       player.setVariable("AT_MARKET", { name: shape.name, properties: shape.obj.properties });
-      player.name = shape.obj.properties.header;
+      player.name = shape.obj.properties.header || shape.obj.properties.item;
     }
 
     if (shape.name.includes("gallery")) {
@@ -184,7 +189,6 @@ const player: RpgPlayerHooks = {
       return;
     }
 
-
     await player.gui("intro").open({}, {waitingAction: true, blockPlayerInput: true});
 
     const usr = $currentUser.get();
@@ -192,7 +196,8 @@ const player: RpgPlayerHooks = {
     await playerGold(player, usr); // assign gold to player
 
     player.setGraphic(usr.sprite);
-    player.addItem("accountChanger", 1); // default user item
+    player.addItem("changeAccount", 1); // default user item
+    player.addItem("changeSprite", 1); // default user item
 
     player.setVariable("AFTER_INTRO", true);
   },

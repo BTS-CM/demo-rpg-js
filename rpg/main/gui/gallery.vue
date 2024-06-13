@@ -2,7 +2,7 @@
 import { defineComponent, computed, watch, watchEffect, ref, inject, onMounted } from "vue";
 import { useStore } from "@nanostores/vue";
 
-import { createMarketOrdersStore } from "../nanoeffects/MarketOrders";
+import { createMarketOrdersStore } from "../nanoeffects/bitshares/MarketOrders";
 import { $currentUser, $userStorage } from "../nanostores/users.ts";
 
 import "@shoelace-style/shoelace/dist/components/button/button";

@@ -90,8 +90,11 @@ export default defineComponent({
     <sl-dialog :open="open" :label="title" class="dialog-overview" @sl-after-hide="closeDialog">
       <div v-if="currentPageContents">
         <div class="text-content">
-          {{ currentPageContents }}
+          {{ currentPageContents }}<br/>
         </div>
+        <p style="text-align: center; margin-top: 5px; margin-bottom: 5px;">
+          {{ currentPage + 1 }}
+        </p>
         <div class="smallGrid">
           <sl-button slot="footer" variant="neutral" @click="prevPage" :disabled="currentPage === 0">Previous</sl-button>
           <sl-button slot="footer" variant="neutral" @click="nextPage" :disabled="currentPage >= totalPages - 1">Next</sl-button>
@@ -112,6 +115,7 @@ export default defineComponent({
 .text-content {
   overflow: hidden;
   text-overflow: ellipsis;
+  height: 300px;
 }
 .smallGrid {
   display: grid;

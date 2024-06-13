@@ -11,7 +11,7 @@ import {
   removeUser,
 } from "../nanostores/users.ts";
 
-import { createUserSearchStore } from "../nanoeffects/UserSearch";
+import { createUserSearchStore } from "../nanoeffects/bitshares/UserSearch";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -43,6 +43,12 @@ export default defineComponent({
       } else {
         return 96;
       }
+    });
+
+    watchEffect(() => {
+        if (spriteValue.value > spriteTypeQty.value) {
+          spriteValue.value = spriteTypeQty.value - 1;
+        }
     });
 
     const spriteURL = computed(() => {
@@ -271,7 +277,6 @@ export default defineComponent({
               </sl-button>
             </div>
           </div>
-
         </div>
         <div v-else>
           <p>No previously used accounts found, please use a new account.</p>
@@ -292,7 +297,7 @@ export default defineComponent({
 
         <img style="margin-top: 20px;" :src="spriteURL" />
 
-        <p>Viewing {{ spriteValue }} of {{ spriteTypeQty }} {{ spriteType }} sprites</p>
+        <p>Viewing {{ spriteValue + 1 }} of {{ spriteTypeQty }} {{ spriteType }} sprites</p>
 
         <div class="smallGrid">
           <sl-button

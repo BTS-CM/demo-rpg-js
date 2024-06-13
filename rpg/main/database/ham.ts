@@ -3,7 +3,7 @@ import { Item } from '@rpgjs/database'
 
 @Item({
     id: 'ham',
-    name: 'ham',
+    name: 'Ham',
     description: 'Gives 100 HP',
     price: 200,
     hpValue: 100

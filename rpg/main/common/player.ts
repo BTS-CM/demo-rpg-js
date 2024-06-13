@@ -1,7 +1,7 @@
 import { RpgPlayer, type RpgPlayerHooks, Control, Components } from "@rpgjs/server";
 
 import { User } from "../nanostores/users";
-import { createUserBalancesStore } from "../nanoeffects/UserBalances";
+import { createUserBalancesStore } from "../nanoeffects/bitshares/UserBalances";
 import { humanReadableFloat } from "../bts/common";
 
 async function playerGold(player: RpgPlayer, usr: User) {

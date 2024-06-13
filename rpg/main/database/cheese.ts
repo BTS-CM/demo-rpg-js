@@ -3,11 +3,11 @@ import { Item } from '@rpgjs/database'
 
 
 @Item({
-    id: 'potion',
-    name: 'Potion',
-    description: 'Gives 100 HP',
-    price: 200,
-    hpValue: 100
+    id: 'cheese',
+    name: 'Cheese',
+    description: 'Gives 5 HP',
+    price: 5,
+    hpValue: 5
 })
 export default class Cheese {
     onAdd(player: RpgPlayer) {

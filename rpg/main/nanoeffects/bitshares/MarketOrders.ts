@@ -1,6 +1,6 @@
 import { nanoquery } from "@nanostores/query";
-import Apis from "../bts/ws/ApiInstances.js";
-import { chains } from "../config/chains";
+import Apis from "../../bts/ws/ApiInstances";
+import { chains } from "../../config/chains";
 
 /**
  * Fetch the orderbook for a given market

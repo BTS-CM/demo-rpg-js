@@ -84,7 +84,6 @@ const $userStorage = persistentMap<StoredUsers>(
 function addUser(username: string, id: string, referrer: string, sprite: string, chain: string) {
   const users = $userStorage.get().users;
   const user = { username, id, referrer, sprite, chain };
-  console.log({user})
   $userStorage.setKey("lastAccount", [user]);
   if (users.find((user) => user.id === id)) {
     //console.log("Using existing user");
@@ -92,6 +91,23 @@ function addUser(username: string, id: string, referrer: string, sprite: string,
   }
   const newUsers = [...users, user];
   $userStorage.setKey("users", newUsers);
+}
+
+/**
+ * Change the sprite of the current user
+ */
+function changeSprite(sprite: string) {
+  const user = $currentUser.get();
+  user.sprite = sprite;
+  $currentUser.set(user);
+
+  const userStorage = $userStorage.get();
+  const storedUserIndex = userStorage.users.findIndex(storedUser => storedUser.id === user.id);
+  
+  if (storedUserIndex !== -1) {
+    userStorage.users[storedUserIndex].sprite = sprite;
+    $userStorage.set(userStorage);
+  }
 }
 
 /**
@@ -108,4 +124,13 @@ function removeUser(id: string) {
   }
 }
 
-export { User, $currentUser, setCurrentUser, eraseCurrentUser, $userStorage, addUser, removeUser };
+export {
+  User,
+  $currentUser,
+  setCurrentUser,
+  changeSprite,
+  eraseCurrentUser,
+  $userStorage,
+  addUser,
+  removeUser
+};

@@ -1,5 +1,5 @@
 import { nanoquery } from "@nanostores/query";
-import Apis from "../bts/ws/ApiInstances.js";
+import Apis from "../../bts/ws/ApiInstances";
 
 //Fetch account balances
 async function getAccountBalances(chain: String, accountID: String) {
