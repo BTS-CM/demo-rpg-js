@@ -11,57 +11,64 @@
             "fileName": "maps/shop-1.tmx",
             "height": 480,
             "width": 480,
-            "x": 2848,
+            "x": 2240,
             "y": -928
         },
         {
             "fileName": "maps/cellar-1.tmx",
             "height": 320,
             "width": 320,
-            "x": 3648,
+            "x": 2752,
             "y": -416
         },
         {
             "fileName": "maps/cellar-2.tmx",
             "height": 320,
             "width": 320,
-            "x": 2848,
+            "x": 2240,
             "y": -416
         },
         {
             "fileName": "maps/shop-4.tmx",
             "height": 320,
             "width": 1152,
-            "x": 2816,
-            "y": 800
+            "x": 2272,
+            "y": 1408
         },
         {
             "fileName": "maps/corridor.tmx",
             "height": 608,
             "width": 160,
-            "x": 3808,
-            "y": 128
+            "x": 3264,
+            "y": 768
         },
         {
             "fileName": "maps/gallery.tmx",
             "height": 800,
             "width": 800,
-            "x": 3648,
+            "x": 2752,
             "y": -1248
         },
         {
             "fileName": "maps/gallery-upstairs.tmx",
             "height": 800,
             "width": 800,
-            "x": 3648,
+            "x": 2752,
             "y": -2080
         },
         {
             "fileName": "maps/gallery-offices.tmx",
             "height": 800,
             "width": 800,
-            "x": 3648,
+            "x": 2752,
             "y": -2912
+        },
+        {
+            "fileName": "maps/castle-entrance.tmx",
+            "height": 640,
+            "width": 640,
+            "x": 3584,
+            "y": -736
         }
     ],
     "onlyShowAdjacentMaps": false,

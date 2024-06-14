@@ -6,6 +6,9 @@ import Book from '../database/book';
 import Cheese from '../database/cheese';
 import Ham from '../database/ham';
 import Pearl from '../database/pearl';
+import TeleportScroll from '../database/teleportScroll';
+import LootBox from '../database/lootBox';
+import LootSack from '../database/lootSack';
 
 @EventData({
     name: 'npc'
@@ -26,7 +29,10 @@ export default class CharaEvent extends RpgEvent {
                 Book,
                 Cheese,
                 Ham,
-                Pearl
+                Pearl,
+                TeleportScroll,
+                LootBox,
+                LootSack,
             ]);
         }
     }

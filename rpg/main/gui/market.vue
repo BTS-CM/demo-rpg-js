@@ -97,7 +97,6 @@ export default defineComponent({
             Item: {{ itemProps.name }}
           </h4>
           <p>
-            {{console.log({itemProps})}}
             Description: {{ itemProps.prototype.description }}<br/>
             Price: {{ itemProps.price }}<br/>
             {{ itemProps.prototype.hpValue ? 'HP value: ' + itemProps.prototype.hpValue : '' }}

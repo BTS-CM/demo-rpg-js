@@ -4,6 +4,8 @@ import { RpgGui } from '@rpgjs/client'
 import { $currentUser, User } from "./nanostores/users";
 import { playerGold } from "./common/player";
 
+import items from "./assets";
+
 const _allowedVariables = ["AT_COMPUTER", "AT_MARKET", "AFTER_INTRO", "AT_GALLERY"];
 const _allowedComponents = [
   "bts-computer",
@@ -102,11 +104,11 @@ const player: RpgPlayerHooks = {
       await player.showText(retrievedVariable.properties.msg);
     }
 
-    /*
+
     if (input === Control.Action) {
       console.log({ x: player.position.x, y: player.position.y });
     }
-    */
+
   },
   async onInShape(player: RpgPlayer, shape: any) {
     if (shape.name.includes("wall") || shape.name.includes("collision")) {
@@ -147,7 +149,8 @@ const player: RpgPlayerHooks = {
 
     if (shape.name.includes("market")) {
       player.setVariable("AT_MARKET", { name: shape.name, properties: shape.obj.properties });
-      player.name = shape.obj.properties.header || shape.obj.properties.item;
+      const relevantItem = items.find(item => (item as any).id === shape.obj.properties.item);
+      player.name = relevantItem ? (relevantItem.prototype as any).name : "";
     }
 
     if (shape.name.includes("gallery")) {

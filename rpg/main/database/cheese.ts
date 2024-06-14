@@ -7,7 +7,8 @@ import { Item } from '@rpgjs/database'
     name: 'Cheese',
     description: 'Gives 5 HP',
     price: 5,
-    hpValue: 5
+    hpValue: 5,
+    consumable: true
 })
 export default class Cheese {
     onAdd(player: RpgPlayer) {

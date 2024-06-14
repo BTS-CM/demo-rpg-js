@@ -40,8 +40,10 @@ export default defineComponent({
     const spriteTypeQty = computed(() => {
       if (spriteType.value === "male") {
         return 74;
-      } else {
+      } else if (spriteType.value === "female") {
         return 96;
+      } else {
+        return 32;
       }
     });
 
@@ -291,8 +293,9 @@ export default defineComponent({
       <div v-if="chain && method === 'sprite'">
         <h3>Choose how your character appears</h3>
         <sl-radio-group :value="spriteType" @sl-change="spriteType = $event.target.value" size="medium" label="Select a sprite type" name="gender">
-          <sl-radio-button style="margin-top: 10px;" pill value="male">Male</sl-radio-button>
-          <sl-radio-button style="margin-top: 10px;" pill value="female">Female</sl-radio-button>
+          <sl-radio-button style="margin-top: 10px;" pill value="male">A</sl-radio-button>
+          <sl-radio-button style="margin-top: 10px;" pill value="female">B</sl-radio-button>
+          <sl-radio-button style="margin-top: 10px;" pill value="misc">C</sl-radio-button>
         </sl-radio-group>
 
         <img style="margin-top: 20px;" :src="spriteURL" />
