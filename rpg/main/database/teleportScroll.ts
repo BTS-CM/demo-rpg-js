@@ -11,6 +11,8 @@ import { Item } from '@rpgjs/database'
 export default class TeleportScroll {
     async onUse(player: RpgPlayer) {
 
+        player.removeGui("rpg-main-menu"); // hide main menu
+
         const choice = await player.showChoices('Where do you want to teleport to?', [
             { text: 'The docks', value: 'map' },
             { text: 'Market', value: 'shop-1' },
@@ -27,9 +29,5 @@ export default class TeleportScroll {
 
         const map = choice.value;
         player.changeMap(map);
-    }
-    
-    onRemove(player: RpgPlayer) {
-        player.showNotification('Teleporting now!');
     }
 }
