@@ -1,11 +1,11 @@
 import { nanoquery } from "@nanostores/query";
 import Apis from "../../bts/ws/ApiInstances";
+import { chains } from "../../config/chains";
 
 //Fetch account balances
-async function getAccountBalances(chain: String, accountID: String) {
+async function getAccountBalances(chain: string, accountID: string, specificNode?: string | null) {
   return new Promise(async (resolve, reject) => {
-    const node =
-      chain === "bitshares" ? "wss://node.xbts.io/ws" : "wss://eu.nodes.testnet.bitshares.ws";
+    let node = specificNode ? specificNode : chains[chain].nodeList[0].url;
 
     let currentAPI;
     try {
@@ -49,10 +49,11 @@ const [createUserBalancesStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
     const chain = args[0] as string;
     const accountID = args[1] as string;
+    const specificNode = args[2] ? args[2] as string : null;
 
     let response;
     try {
-      response = await getAccountBalances(chain, accountID);
+      response = await getAccountBalances(chain, accountID, specificNode);
     } catch (error) {
       console.log({ error });
       return;
@@ -67,4 +68,4 @@ const [createUserBalancesStore] = nanoquery({
   },
 });
 
-export { createUserBalancesStore };
+export { createUserBalancesStore, getAccountBalances };

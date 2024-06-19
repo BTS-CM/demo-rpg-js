@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="6" height="11" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="7">
+ <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="6" height="11">
+  <data encoding="csv">
+1610613199,463,463,463,463,1610613199,
+1610613199,453,450,450,2147484101,1610613199,
+1610613199,461,458,458,2147484109,1610613199,
+1610613199,309,309,309,309,1610613199,
+1610613199,309,309,309,309,1610613199,
+1610613199,309,309,309,309,1610613199,
+1610613199,309,309,309,309,1610613199,
+1610613199,309,309,309,309,1610613199,
+3758096847,309,309,309,309,1610613199,
+1073742284,309,309,309,309,1073742284,
+460,309,309,309,309,460
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="6" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,611,611,0,0,
+0,0,0,0,0,0,
+0,865,764,0,777,0,
+0,0,0,0,785,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,709,725,0,0,0,
+0,1610613284,1610613284,1610613284,1610613284,0,
+0,545,546,551,547,0,
+0,553,554,559,555,0
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="6" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,977,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,552,0,0,
+0,1610613284,1610613284,560,1610613284,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Object Layer 1">
+  <object id="1" name="starting point" type="start" x="112" y="247">
+   <point/>
+  </object>
+  <object id="2" name="wall-001" x="23.5" y="96.0909" width="7.5" height="255.955">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="4" name="wall-002" x="160.341" y="95.7045" width="8.40909" height="256.136">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="5" name="wall-003" x="23.4356" y="90.871" width="145.25" height="4.74667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="6" name="message" x="31.2727" y="219.273" width="42.1818" height="42">
+   <properties>
+    <property name="msg" value="You're in jail. Try using another account."/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

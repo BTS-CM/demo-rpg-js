@@ -2,7 +2,13 @@ import { nanoquery } from "@nanostores/query";
 import Apis from "../../bts/ws/ApiInstances";
 import { chains } from "../../config/chains";
 
-async function accountSearch(chain: string, search_string: string, specificNode?: string | null){
+function getMarketOrderBook (
+  chain: string,
+  base: string,
+  quote: string,
+  limit?: number | null,
+  specificNode?: string | null
+) {
   return new Promise(async (resolve, reject) => {
     let node = specificNode ? specificNode : chains[chain].nodeList[0].url;
 
@@ -17,40 +23,46 @@ async function accountSearch(chain: string, search_string: string, specificNode?
       return;
     }
 
-    let object;
+    let orderBook;
     try {
-      object = await currentAPI.db_api().exec("get_accounts", [[search_string]]);
+      orderBook = await currentAPI.db_api().exec("get_order_book", [base, quote, limit]);
     } catch (error) {
       console.log({ error });
-      currentAPI.close();
-      reject(error);
     }
 
-    if (!object || !object.length) {
-      return reject(new Error("Couldn't retrieve account"));
+    try {
+      await currentAPI.close();
+    } catch (error) {
+      console.log({ error });
     }
 
-    currentAPI.close();
-    resolve(object[0]);
+    if (!orderBook) {
+      return reject(new Error("Couldn't retrieve orderbook"));
+    }
+
+    resolve(orderBook);
   });
 }
 
-const [createUserSearchStore] = nanoquery({
+const [createMarketOrderStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
     const chain = args[0] as string;
-    const searchText = args[1] as string;
-    const specificNode = args[2] ? args[2] as string : null;
+    const quote = args[1] as string;
+    const base = args[2] as string;
+    const limit = args[3] as number;
+
+    let specificNode = args[4] ? args[4] as string : null;
 
     let response;
     try {
-      response = await accountSearch(chain, searchText, specificNode);
+      response =  await getMarketOrderBook(chain, base, quote, limit, specificNode);
     } catch (error) {
       console.log({ error });
       return;
     }
 
     if (!response) {
-      console.log(`Failed to fetch user balances`);
+      console.log(`Failed to fetch market order book`);
       return;
     }
 
@@ -58,4 +70,4 @@ const [createUserSearchStore] = nanoquery({
   },
 });
 
-export { createUserSearchStore, accountSearch };
+export { createMarketOrderStore, getMarketOrderBook };

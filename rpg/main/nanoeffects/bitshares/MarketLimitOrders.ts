@@ -2,17 +2,15 @@ import { nanoquery } from "@nanostores/query";
 import Apis from "../../bts/ws/ApiInstances";
 import { chains } from "../../config/chains";
 
-/**
- * Fetch the orderbook for a given market
- */
-async function fetchOrderBook(chain: string, quote: string, base: string, specificNode?: string) {
+function getLimitOrders (
+  chain: string,
+  base: string,
+  quote: string,
+  limit?: number | null,
+  specificNode?: string | null
+) {
   return new Promise(async (resolve, reject) => {
-    let node: string;
-    if (specificNode) {
-      node = specificNode;
-    } else {
-      node = chains[chain].nodeList[0].url;
-    }
+    let node = specificNode ? specificNode : chains[chain].nodeList[0].url;
 
     let currentAPI;
     try {
@@ -21,12 +19,13 @@ async function fetchOrderBook(chain: string, quote: string, base: string, specif
       );
     } catch (error) {
       console.log({ error });
-      return reject(error);
+      reject(error);
+      return;
     }
 
-    let orderBook;
+    let limitOrders;
     try {
-      orderBook = await currentAPI.db_api().exec("get_order_book", [base, quote, 50]);
+      limitOrders = await currentAPI.db_api().exec("get_limit_orders", [base, quote, limit]);
     } catch (error) {
       console.log({ error });
     }
@@ -37,37 +36,33 @@ async function fetchOrderBook(chain: string, quote: string, base: string, specif
       console.log({ error });
     }
 
-    if (!orderBook) {
-      return reject(new Error("Couldn't retrieve orderbook"));
+    if (!limitOrders) {
+      return reject(new Error("Couldn't retrieve limit orders"));
     }
 
-    return resolve(orderBook);
+    resolve(limitOrders);
   });
 }
 
-const [createMarketOrdersStore] = nanoquery({
+const [createLimitOrdersStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
     const chain = args[0] as string;
     const quote = args[1] as string;
     const base = args[2] as string;
+    const limit = args[3] as number;
 
-    let specificNode;
-    if (args.length > 2) {
-      specificNode = args[3] as string;
-    }
+    let specificNode = args[4] ? args[4] as string : null;
 
     let response;
     try {
-      response = specificNode
-        ? await fetchOrderBook(chain, quote, base, specificNode)
-        : await fetchOrderBook(chain, quote, base);
+      response =  await getLimitOrders(chain, base, quote, limit, specificNode);
     } catch (error) {
       console.log({ error });
       return;
     }
 
     if (!response) {
-      console.log(`Failed to fetch market orders`);
+      console.log(`Failed to fetch market order book`);
       return;
     }
 
@@ -75,4 +70,4 @@ const [createMarketOrdersStore] = nanoquery({
   },
 });
 
-export { createMarketOrdersStore };
+export { createLimitOrdersStore, getLimitOrders };

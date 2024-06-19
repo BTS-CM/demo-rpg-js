@@ -69,6 +69,13 @@
             "width": 640,
             "x": 3584,
             "y": -1088
+        },
+        {
+            "fileName": "maps/jail.tmx",
+            "height": 352,
+            "width": 192,
+            "x": 4032,
+            "y": -416
         }
     ],
     "onlyShowAdjacentMaps": false,

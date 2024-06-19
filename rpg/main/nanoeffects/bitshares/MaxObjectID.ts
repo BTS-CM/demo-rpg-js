@@ -7,15 +7,10 @@ async function getMaxObjectIDs(
   chain: string,
   space_id: number,
   type_id: number,
-  specificNode?: string
+  specificNode?: string | null
 ) {
   return new Promise(async (resolve, reject) => {
-    let node: string;
-    if (specificNode) {
-      node = specificNode;
-    } else {
-      node = chains[chain].nodeList[0].url;
-    }
+    let node = specificNode ? specificNode : chains[chain].nodeList[0].url;
 
     let currentAPI;
     try {
@@ -67,17 +62,11 @@ const [createMaxObjectIDStore] = nanoquery({
     const chain = args[0] as string;
     const space_id = args[1] as number;
     const type_id = args[2] as number;
-
-    let specificNode;
-    if (args.length > 2) {
-      specificNode = args[3] as string;
-    }
+    const specificNode = args[3] ? (args[3] as string) : null;
 
     let response;
     try {
-      response = specificNode
-        ? await getMaxObjectIDs(chain, space_id, type_id, specificNode)
-        : await getMaxObjectIDs(chain, space_id, type_id);
+      response = await getMaxObjectIDs(chain, space_id, type_id, specificNode);
     } catch (error) {
       console.log({ error });
       return;
@@ -92,4 +81,4 @@ const [createMaxObjectIDStore] = nanoquery({
   },
 });
 
-export { createMaxObjectIDStore };
+export { createMaxObjectIDStore, getMaxObjectIDs };
