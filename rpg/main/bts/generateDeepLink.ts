@@ -5,14 +5,6 @@ import { v4 as uuidv4 } from "uuid";
 
 import { closeWSS } from "./common.js";
 
-/**
- * Returns deeplink contents
- * @param chain
- * @param opType
- * @param operations
- * @param app
- * @returns generated deeplink
- */
 export async function generateDeepLink(chain: string, opType: string, operations: object[]) {
   return new Promise(async (resolve, reject) => {
     const _node =
