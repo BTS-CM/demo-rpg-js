@@ -13,18 +13,21 @@ function _sliceIntoChunks(arr: any[], size: number) {
   
 // Iterate over the chunks of object ids we want to fetch
 async function getObjects(
-chain: string,
-object_ids: string[],
-specificNode?: string | null
+    chain: string,
+    object_ids: string[],
+    specificNode?: string | null,
+    existingAPI?: any
 ) {
     return new Promise(async (resolve, reject) => {
         let node = specificNode ? specificNode : chains[chain].nodeList[0].url;
 
         let currentAPI;
         try {
-            currentAPI = await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
+            currentAPI = existingAPI
+            ? existingAPI
+            : await Apis.instance(node, true, 4000, { enableDatabase: true }, (error: Error) =>
                 console.log({ error })
-            );
+              );
         } catch (error) {
             console.log({ error, node });
             return reject(error);
@@ -48,7 +51,9 @@ specificNode?: string | null
             }
         }
 
-        currentAPI.close();
+        if (!existingAPI) {
+            currentAPI.close();
+        }
         resolve(retrievedObjects);
     });
 }
