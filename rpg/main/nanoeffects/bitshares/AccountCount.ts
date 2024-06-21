@@ -20,9 +20,7 @@ async function getAccountCount(chain: string, specificNode?: string | null) {
 
     let accountCount;
     try {
-      accountCount = await currentAPI
-        .db_api()
-        .exec("get_account_count", []);
+      accountCount = await currentAPI.db_api().exec("get_account_count", []);
     } catch (error) {
       console.log({ error });
     }
