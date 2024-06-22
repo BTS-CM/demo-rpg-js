@@ -30,6 +30,7 @@
     "create-hmac": "^1.1.7",
     "deep-equal": "^2.2.3",
     "ecurve": "^1.0.6",
+    "eosjs": "^22.1.0",
     "isomorphic-ws": "^5.0.0",
     "long": "^5.2.3",
     "safe-buffer": "^5.2.1",
