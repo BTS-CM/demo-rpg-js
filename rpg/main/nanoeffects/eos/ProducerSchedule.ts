@@ -3,7 +3,7 @@ import { JsonRpc } from 'eosjs';
 
 import { chains } from "../../config/chains";
 
-async function get_info(
+async function get_producer_schedule(
   specificNode?: string | null,
   existingRPC?: JsonRpc | null
 ) {
@@ -17,26 +17,26 @@ async function get_info(
 
   let response;
   try {
-    response = await rpc.get_info();
+    response = await rpc.get_producer_schedule();
   } catch (error) {
     console.log({ error });
     return;
   }
 
   if (!response) {
-    console.log(`Failed to fetch EOS info...`);
+    console.log(`Failed to fetch EOS producer schedule...`);
     return;
   }
 
   return response;
 }
 
-const [createInfoStore] = nanoquery({
+const [createEOSProducerScheduleStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
     let specificNode = args[0] ? (args[0] as string) : null;
 
-    return await get_info(specificNode);
+    return await get_producer_schedule(specificNode);
   },
 });
 
-export { createInfoStore, get_info };
+export { createEOSProducerScheduleStore, get_producer_schedule };

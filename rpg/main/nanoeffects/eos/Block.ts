@@ -16,20 +16,32 @@ async function get_block(
     return;
   }
 
-  let response;
+  let _block;
   try {
-    response = await rpc.get_block(block_number);
+    _block = await rpc.get_block(block_number);
   } catch (error) {
     console.log({ error });
-    return;
   }
 
-  if (!response) {
-    console.log(`Failed to fetch EOS block details...`);
-    return;
+  let _blockInfo;
+  try {
+    _blockInfo = await rpc.get_block_info(block_number);
+  } catch (error) {
+    console.log({ error });
   }
 
-  return response;
+  let _blockHeaderState;
+  try {
+    _blockHeaderState = await rpc.get_block_header_state(block_number);
+  } catch (error) {
+    console.log({ error });
+  }
+
+  return {
+    block: _block ?? null,
+    blockInfo: _blockInfo ?? null,
+    blockHeaderState: _blockHeaderState ?? null
+  };
 }
 
 const [createEOSBlockStore] = nanoquery({

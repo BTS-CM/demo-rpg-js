@@ -3,7 +3,7 @@ import { JsonRpc } from 'eosjs';
 
 import { chains } from "../../config/chains";
 
-async function get_info(
+async function get_database_size(
   specificNode?: string | null,
   existingRPC?: JsonRpc | null
 ) {
@@ -17,26 +17,26 @@ async function get_info(
 
   let response;
   try {
-    response = await rpc.get_info();
+    response = await rpc.db_size_get();
   } catch (error) {
     console.log({ error });
     return;
   }
 
   if (!response) {
-    console.log(`Failed to fetch EOS info...`);
+    console.log(`Failed to fetch EOS database size...`);
     return;
   }
 
   return response;
 }
 
-const [createInfoStore] = nanoquery({
+const [createEOSDatabaseSizeStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
     let specificNode = args[0] ? (args[0] as string) : null;
 
-    return await get_info(specificNode);
+    return await get_database_size(specificNode);
   },
 });
 
-export { createInfoStore, get_info };
+export { createEOSDatabaseSizeStore, get_database_size };

@@ -3,7 +3,8 @@ import { JsonRpc } from 'eosjs';
 
 import { chains } from "../../config/chains";
 
-async function get_info(
+async function history_get_key_accounts(
+  public_key: string,
   specificNode?: string | null,
   existingRPC?: JsonRpc | null
 ) {
@@ -17,26 +18,27 @@ async function get_info(
 
   let response;
   try {
-    response = await rpc.get_info();
+    response = await rpc.history_get_key_accounts(public_key);
   } catch (error) {
     console.log({ error });
     return;
   }
 
   if (!response) {
-    console.log(`Failed to fetch EOS info...`);
+    console.log(`Failed to fetch EOS accounts from a public key...`);
     return;
   }
 
   return response;
 }
 
-const [createInfoStore] = nanoquery({
+const [createKeyAccountStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
-    let specificNode = args[0] ? (args[0] as string) : null;
+    const public_key = args[0] as string;
+    let specificNode = args[1] ? (args[1] as string) : null;
 
-    return await get_info(specificNode);
+    return await history_get_key_accounts(public_key, specificNode);
   },
 });
 
-export { createInfoStore, get_info };
+export { createKeyAccountStore, history_get_key_accounts };
