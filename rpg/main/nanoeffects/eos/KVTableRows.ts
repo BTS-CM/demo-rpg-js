@@ -3,6 +3,64 @@ import { JsonRpc } from 'eosjs';
 
 import { chains } from "../../config/chains";
 
+async function get_kv_table_rows(
+  json: boolean,
+  code: string,
+  table: string,
+  indexName: string,
+  limit: number,
+  indexValue: string | null, 
+  lowerBound: string | null,
+  upperBound: string | null,
+  reverse: boolean,
+  show_payer: boolean,
+  chain: string,
+  specificNode: string | null,
+  existingRPC?: JsonRpc | null
+) {
+  let rpc;
+  try {
+    rpc = existingRPC ? existingRPC : await new JsonRpc(specificNode ? specificNode : chains[chain].nodeList[0].url);
+  } catch (error) {
+    console.log({ error });
+    return;
+  }
+
+  let options = {
+    json, // Get the response as json
+    code, // Contract that we target
+    table, // Table name
+    indexName, // The name of the index name
+    limit, // Maximum number of rows that we want to get
+    reverse, // Optional: Get reversed data
+    show_payer // Optional: Show ram payer
+  }
+
+  if (indexValue) {
+    options["indexValue"] = indexValue; // Table primary key value
+  }
+
+  if (lowerBound && upperBound) {
+    options["lowerBound"] = lowerBound; // Table primary key value
+    options["upperBound"] = upperBound; // Table primary key value
+  }
+
+  let response;
+  try {
+    response = await rpc.get_kv_table_rows(options);
+  } catch (error) {
+    console.log({ error });
+    return;
+  }
+
+  if (!response) {
+    console.log(`Failed to fetch EOS table rows...`);
+    return;
+  }
+
+  return response;
+}
+
 const [createKVTableRowStore] = nanoquery({
   fetcher: async (...args: unknown[]) => {
 
@@ -23,48 +81,21 @@ const [createKVTableRowStore] = nanoquery({
     let chain = args[10] ? (args[10] as string) : "EOS";
     let specificNode = args[11] ? (args[11] as string) : null;
 
-    let rpc;
-    try {
-      rpc = await new JsonRpc(specificNode ? specificNode : chains[chain].nodeList[0].url);
-    } catch (error) {
-      console.log({ error });
-      return;
-    }
-
-    let options = {
-      json, // Get the response as json
-      code, // Contract that we target
-      table, // Table name
-      indexName, // The name of the index name
-      limit, // Maximum number of rows that we want to get
-      reverse, // Optional: Get reversed data
-      show_payer // Optional: Show ram payer
-    }
-
-    if (indexValue) {
-      options["indexValue"] = indexValue; // Table primary key value
-    }
-
-    if (lowerBound && upperBound) {
-      options["lowerBound"] = lowerBound; // Table primary key value
-      options["upperBound"] = upperBound; // Table primary key value
-    }
-
-    let response;
-    try {
-      response = await rpc.get_kv_table_rows(options);
-    } catch (error) {
-      console.log({ error });
-      return;
-    }
-
-    if (!response) {
-      console.log(`Failed to fetch EOS table rows...`);
-      return;
-    }
-
-    return response;
+    return await get_kv_table_rows(
+      json,
+      code,
+      table,
+      indexName,
+      limit,
+      indexValue,
+      lowerBound,
+      upperBound,
+      reverse,
+      show_payer,
+      chain,
+      specificNode
+    );    
   },
 });
 
-export { createKVTableRowStore };
+export { createKVTableRowStore, get_kv_table_rows };
