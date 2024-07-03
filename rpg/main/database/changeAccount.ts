@@ -23,6 +23,11 @@ export default class ChangeAccounts {
         player.items = [];
         player.addItem("changeAccount", 1);
         player.addItem("changeSprite", 1);
+        player.items = player.items.sort((a, b) => (a.item.id as string).localeCompare(b.item.id as string));
+
+        if (player.getCurrentMap()?.id !== 'map') {
+            player.changeMap('map');
+        }
 
         player.showNotification("Changed account. Items and gold have been reset.");
     }

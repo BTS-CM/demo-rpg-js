@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="42">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="44">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
  <tileset firstgid="1065" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="2353" source="../../spritesheets/Overworld.tsx"/>
@@ -61,7 +61,7 @@
 </data>
  </layer>
  <objectgroup id="5" name="Object Layer 1">
-  <object id="1" name="Start Position" type="start" x="160.591" y="421.549">
+  <object id="1" name="Start Position" type="start" x="160.591" y="419.549">
    <point/>
   </object>
   <object id="6" name="teleport1" x="128.625" y="464.083" width="63.4167" height="15.1667">
@@ -217,13 +217,6 @@
     <property name="collision" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="37" name="npc" type="event" x="112.666" y="182">
-   <properties>
-    <property name="job" value="shop-1"/>
-    <property name="sprite" value="female-9"/>
-   </properties>
-   <point/>
-  </object>
   <object id="39" name="market_07" x="189.201" y="283.773" width="38.2651" height="40.4546">
    <properties>
     <property name="component" value="market"/>
@@ -242,24 +235,12 @@
     <property name="item" value="lootSack"/>
    </properties>
   </object>
+  <object id="43" name="npc" x="112.667" y="184.667">
+   <properties>
+    <property name="job" value="shop-1"/>
+    <property name="sprite" value="female-7"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
- <layer id="4" name="Tile Layer 4" width="15" height="15">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
 </map>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="28">
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="32" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="31">
  <tileset firstgid="1" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="1289" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="2729" source="[Base]BaseChip_pipo.tsx"/>

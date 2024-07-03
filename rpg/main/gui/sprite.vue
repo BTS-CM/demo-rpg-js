@@ -84,6 +84,8 @@ export default defineComponent({
       :open="open"
       label="Selecting a new sprite"
       class="dialog-overview"
+      @sl-request-close="closeGUI"
+      @keydown.esc.prevent.stop="closeGUI"
     >
       <div>
         <h3>Choose how your character appears</h3>

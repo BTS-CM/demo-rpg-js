@@ -2,7 +2,7 @@
 import { defineComponent, computed, watch, watchEffect, ref, inject, onMounted } from "vue";
 import { useStore } from "@nanostores/vue";
 
-import { createMarketOrdersStore } from "../nanoeffects/bitshares/MarketOrders";
+import { createMarketOrderStore } from "../nanoeffects/bitshares/MarketOrderBook";
 import { $currentUser, $userStorage } from "../nanostores/users.ts";
 
 import "@shoelace-style/shoelace/dist/components/button/button";
@@ -106,7 +106,7 @@ export default defineComponent({
       if (beeteos.value || retry.value) {
         loading.value = true;
 
-        const marketStore = createMarketOrdersStore([
+        const marketStore = createMarketOrderStore([
           blockchain.value,
           symbol.value,
           blockchain.value === "bitshares" ? "BTS" : "TEST",
@@ -141,6 +141,7 @@ export default defineComponent({
           console.log("No asks available for this NFT.");
           return;
         }
+        
         var expiry = new Date();
         expiry.setMinutes(expiry.getMinutes() + 60);
 

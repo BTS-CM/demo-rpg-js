@@ -19,5 +19,6 @@ export default class ChangeSprite {
     
     onRemove(player: RpgPlayer) {
         player.addItem('changeSprite', 1); // avoid selling the tool
+        player.items = player.items.sort((a, b) => (a.item.id as string).localeCompare(b.item.id as string));
     }
 }

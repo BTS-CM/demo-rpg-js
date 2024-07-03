@@ -15,14 +15,15 @@ import LootSack from '../database/lootSack';
 })
 export default class CharaEvent extends RpgEvent {
     onInit() {
-        this.setGraphic(this.properties.sprite ?? "hero")
+        console.log({npc: this.properties})
+        this.setGraphic(this.properties.sprite ?? "female-1")
     }
 
     async onAction(player: RpgPlayer) {
         const job = this.properties.job;
         if (job === "shop-1") {
             await player.showText(`Hello, welcome to my shop! What would you like to buy or sell?`);
-    
+            
             player.callShop([
                 Potion,
                 Ale,
