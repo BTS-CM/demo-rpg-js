@@ -1,4 +1,4 @@
 {
-    "buildCommand": "npm run build",
-    "outputDirectory": "dist/standalone"
+    "buildCommand": "bun run build",
+    "outputDirectory": "dist"
 }
