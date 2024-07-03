@@ -1,7 +1,7 @@
 <script>
-import { RpgPlayer } from "@rpgjs/server";
 import { defineComponent, computed, watchEffect, ref, onMounted, inject, defineProps, toRaw } from "vue";
 import { useStore } from "@nanostores/vue";
+import { RpgResource } from '@rpgjs/client'
 
 import {
   //type User,
@@ -54,7 +54,7 @@ export default defineComponent({
     });
 
     const spriteURL = computed(() => {
-      return `/main/spritesheets/characters/${spriteType.value}-${spriteValue.value}.png`;
+      return RpgResource.spritesheets.get(`${spriteType.value}-${spriteValue.value}`);
     });
 
     const storedUsers = useStore($userStorage);
@@ -298,7 +298,7 @@ export default defineComponent({
           <sl-radio-button style="margin-top: 10px;" pill value="misc">C</sl-radio-button>
         </sl-radio-group>
 
-        <img style="margin-top: 20px;" :src="spriteURL" />
+        <img v-if="spriteURL" style="margin-top: 20px;" :src="spriteURL.image" />
 
         <p>Viewing {{ spriteValue + 1 }} of {{ spriteTypeQty }} {{ spriteType }} sprites</p>
 

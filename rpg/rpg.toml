@@ -8,6 +8,9 @@ modules = [
     '@rpgjs/gamepad'
 ]
 
+[compilerOptions.alias]
+  "@" = "./main"
+
 [start]
     map = 'map'
     hitbox = [16, 16]

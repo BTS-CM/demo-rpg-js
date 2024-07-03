@@ -10,6 +10,7 @@ import { Item } from '@rpgjs/database'
 })
 export default class TeleportScroll {
     async onUse(player: RpgPlayer) {
+        console.log({remaining: player._gui});
 
         player.removeGui("rpg-main-menu"); // hide main menu
 
@@ -28,6 +29,8 @@ export default class TeleportScroll {
         }
 
         const map = choice.value;
+
+        
         player.changeMap(map);
     }
 }
