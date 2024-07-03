@@ -50,7 +50,7 @@ export default defineComponent({
     });
 
     const spriteURL = computed(() => {
-      return `/main/spritesheets/characters/${spriteType.value}-${spriteValue.value}.png`;
+      return `@/main/spritesheets/characters/${spriteType.value}-${spriteValue.value}.png`;
     });
 
     async function closeGUI() {     
