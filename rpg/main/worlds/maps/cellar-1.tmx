@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="14">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="14">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
- <tileset firstgid="1001" source="../../spritesheets/slates.tsx"/>
- <tileset firstgid="2289" source="../../spritesheets/Overworld.tsx"/>
+ <tileset firstgid="1065" source="../../spritesheets/slates.tsx"/>
+ <tileset firstgid="2353" source="../../spritesheets/Overworld.tsx"/>
  <layer id="1" name="Tile Layer 1" width="10" height="10">
   <data encoding="csv">
 527,365,362,362,362,362,362,362,363,527,
@@ -22,12 +22,12 @@
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
-0,1681,0,0,0,0,0,296,0,0,
-0,1681,0,0,0,0,0,304,0,0,
-0,1681,0,0,0,0,0,0,0,0,
-0,1681,0,0,0,0,0,0,0,0,
-0,1681,0,0,0,0,0,0,0,0,
-0,1681,0,0,0,0,0,0,0,0,
+0,1745,0,0,0,0,0,296,0,0,
+0,1745,0,0,0,0,0,304,0,0,
+0,1745,0,0,0,0,0,0,0,0,
+0,1745,0,0,0,0,0,0,0,0,
+0,1745,0,0,0,0,0,0,0,0,
+0,1745,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>

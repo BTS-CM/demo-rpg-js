@@ -1,6 +1,8 @@
 <script>
 import { defineComponent, computed, watch, watchEffect, ref, inject, onMounted } from "vue";
 import { useStore } from "@nanostores/vue";
+import { RpgResource } from '@rpgjs/client';
+
 
 import { createMarketOrderStore } from "../nanoeffects/bitshares/MarketOrderBook";
 import { $currentUser, $userStorage } from "../nanostores/users.ts";
@@ -190,9 +192,32 @@ export default defineComponent({
       return `/main/spritesheets/gfx/NFT/${symbol.value}/0_256x256.${filetype.value}`;
     });
 
-    const currentImage = computed(() => {
-      return `/main/spritesheets/gfx/NFT/${symbol.value}/${current_nft.value}_256x256.${filetype.value}`;
+    const spriteURL = computed(() => {
+      if (!symbol.value) return null;
+      const sprite = RpgResource.spritesheets.get(symbol.value);
+      return sprite.image ?? null;
     });
+
+    const rowIndex = computed(() => {
+      return Math.floor(current_nft.value / 8);
+    });
+
+    const columnIndex = computed(() => {
+      return current_nft.value % 8;
+    });
+
+    const tileStyle = computed(() => {
+      const tileSize = 256;
+      const backgroundPositionX = -(columnIndex.value * tileSize) + 'px';
+      const backgroundPositionY = -(rowIndex.value * tileSize) + 'px';
+      return {
+        width: tileSize + 'px',
+        height: tileSize + 'px',
+        backgroundImage: `url(${spriteURL.value})`,
+        backgroundPosition: `${backgroundPositionX} ${backgroundPositionY}`
+      };
+    });
+
 
     return {
       // Dialog open states:
@@ -215,8 +240,9 @@ export default defineComponent({
       quotePrecision,
       quoteAssetID,
       // generated urls
-      currentImage,
       mainImage,
+      spriteURL,
+      tileStyle,
       // NFT Properties:
       artist,
       acknowledgements,
@@ -254,12 +280,9 @@ export default defineComponent({
           "
         >
           <a :href="`https://gateway.pinata.cloud/ipfs/${CID}`" target="_blank">
-            <img
-              :src="currentImage"
-              :id="`nft_${current_nft}_${symbol}`"
-              width="300px"
-              alt="NFT media"
-            />
+            <div class="magnify">
+              <div class="tile" :id="`nft_${current_nft}_${symbol}`" :style="tileStyle"></div>
+            </div>
           </a>
           <p>{{ current_nft + 1 }} of {{ media_qty }}</p>
         </div>
@@ -478,6 +501,14 @@ export default defineComponent({
 </template>
 
 <style>
+.tile {
+  display: inline-block;
+}
+.magnify {
+  transform: scale(1.171875); /* 300 / 256 = 1.171875 */
+  transform-origin: center; /* Adjust as needed */
+  display: inline-block; /* Or as per your layout requirements */
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
