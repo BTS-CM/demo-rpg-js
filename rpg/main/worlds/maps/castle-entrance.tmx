@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="14">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="23">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
  <tileset firstgid="1065" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="2505" source="../../spritesheets/slates.tsx"/>
@@ -17,7 +17,7 @@
 2684355375,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,536871727,
 2684355375,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,536871727,
 2684355375,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,326,536871727,
-2684355375,326,326,326,326,326,1610613552,1610613560,1610613560,1610613560,1610613560,1610613560,1610613560,816,326,326,326,326,326,536871727,
+2684355375,326,326,326,326,326,1610613552,1610613560,1610613560,326,326,1610613560,1610613560,816,326,326,326,326,326,536871727,
 2684355375,326,326,326,326,326,2147484472,421,418,326,326,418,2147484069,824,326,326,326,326,326,536871727,
 2684355375,326,326,326,326,326,2147484472,429,426,326,326,426,2147484077,824,326,326,326,326,326,536871727,
 2684355375,326,326,326,326,326,2147484472,291,291,291,291,291,291,824,326,326,326,326,326,536871727,
@@ -41,9 +41,9 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,545,546,551,546,547,0,3758099569,3758099569,3758099569,3758099569,3758099569,3758099569,0,0,0,0,0,0,0,
-0,553,554,559,554,555,3221228657,536874097,536874097,1802,2684356362,536874097,536874097,1073745009,0,0,0,0,0,0,
-0,0,0,0,0,0,2147486833,0,332,1806,2147485454,334,0,1073745009,0,0,0,0,0,0,
+0,0,0,0,0,0,0,3758099569,3758099569,3129,3758099569,3758099569,3758099569,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3221228657,536874097,536874097,0,0,536874097,536874097,1073745009,0,0,0,0,0,0,
+0,0,0,0,0,0,2147486833,0,332,0,0,334,0,1073745009,0,0,0,0,0,0,
 0,0,0,0,0,0,2147486833,1073745009,340,333,333,342,2147486833,1073745009,0,0,230,0,0,0,
 0,0,0,0,0,0,2147486833,1073745009,348,333,333,350,2147486833,1073745009,0,0,238,0,343,0,
 0,0,0,0,0,0,2147486833,1073745009,0,0,0,0,2147486833,1073745009,335,0,0,0,351,0,
@@ -65,8 +65,8 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,885,886,560,1049,1050,0,0,2147486833,242,244,1073745009,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,2684354819,1610612995,0,0,0,0,0,0,0,0,0,
+0,885,886,0,1049,1050,0,0,2147486833,242,244,1073745009,0,0,0,0,0,0,0,0,
 0,893,894,0,1057,1058,0,0,2147486833,245,246,1073745009,0,0,0,0,0,0,0,0,
 0,901,902,0,1033,1036,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,862,0,0,1041,1044,0,0,909,0,0,909,0,0,0,0,0,0,0,0,
@@ -83,7 +83,7 @@
    <properties>
     <property name="destination" value="map"/>
     <property name="x" type="int" value="807"/>
-    <property name="y" type="int" value="376"/>
+    <property name="y" type="int" value="920"/>
    </properties>
   </object>
   <object id="3" name="wall-001" x="0.603423" y="608.264" width="287.5" height="32">
@@ -137,6 +137,55 @@
    </properties>
   </object>
   <object id="13" name="wall-011" x="256.186" y="461.681" width="13.8333" height="82.5">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="14" name="wall-020" x="286.75" y="141.917" width="13.8333" height="113">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="15" name="wall-021" x="339.083" y="143" width="13.8333" height="113">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="16" name="wall-022" x="384.083" y="97" width="30.3333" height="84">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="17" name="wall-023" x="225.333" y="96.5" width="30.3333" height="84">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="18" name="wall-024" x="225.333" y="178.5" width="61.8333" height="44.5">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="19" name="wall-025" x="353.583" y="179.25" width="61.8333" height="44.5">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="20" name="teleport-2" x="450" y="544.667" width="28" height="30">
+   <properties>
+    <property name="destination" value="jail"/>
+    <property name="x" type="int" value="50"/>
+    <property name="y" type="int" value="400"/>
+   </properties>
+  </object>
+  <object id="21" name="teleport-3" x="577.333" y="542.667" width="29.3333" height="31.3333">
+   <properties>
+    <property name="destination" value="map"/>
+    <property name="x" type="int" value="807"/>
+    <property name="y" type="int" value="750"/>
+   </properties>
+  </object>
+  <object id="22" name="wall-030" x="481.333" y="129" width="61.8333" height="84">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>

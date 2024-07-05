@@ -1,5 +1,6 @@
 <script>
 import { RpgPlayer } from '@rpgjs/server'
+import { RpgResource } from '@rpgjs/client';
 import { defineComponent, computed, watchEffect, ref, onMounted, inject } from "vue";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -41,6 +42,24 @@ export default defineComponent({
       return itemProps.value.price * qty.value;
     });
 
+    const spriteURL = computed(() => {
+      const _name = props.properties.spritesheet;
+      console.log({props: props.properties});
+      return RpgResource.spritesheets.get(_name).image;
+    });
+
+    const tileStyle = computed(() => {
+      const startX = -(props.properties.x) + 'px';
+      const startY = -(props.properties.y) + 'px';
+      return {
+        width: '32px',
+        height: '32px',
+        backgroundImage: `url(${spriteURL.value})`,
+        backgroundPosition: `${startX} ${startY}`,
+        backgroundSize: `${props.properties.max_x} ${props.properties.max_y}`
+      };
+    });
+
     watchEffect(async () => {
       if (open.value) {
         console.log(`Market GUI opened: ${itemProps.value.name}`);
@@ -75,6 +94,7 @@ export default defineComponent({
       //
       item,
       itemProps,
+      tileStyle,
       //
       totalPrice,
       qty,
@@ -89,8 +109,8 @@ export default defineComponent({
   <div class="market">
     <sl-dialog :open="open" label="Would you like to buy this item?" class="dialog-overview">
       <div class="details">
-        <div>
-          <img :src="`/main/assets/${itemProps.id}.png`" alt="item" style="width: 100px; height: 100px;" />
+        <div class="magnify">
+          <div class="tile" :style="tileStyle"></div>
         </div>
         <div>
           <h4 style="margin: 0px; padding: 0px;">
@@ -121,6 +141,16 @@ export default defineComponent({
 </template>
 
 <style>
+.tile {
+  display: inline-block;
+}
+.magnify {
+  transform: scale(3);
+  transform-origin: center;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 50px;
+}
 .smallGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

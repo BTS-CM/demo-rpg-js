@@ -77,17 +77,29 @@ const player: RpgPlayerHooks = {
     if (input === Control.Back) {
       player.callMainMenu();
     }
-
+  
     if (input === Control.Action && player.getVariable("AT_MARKET")) {
-      await promptPlayer(player, "AT_MARKET", "Want to evaluate this item?");
+      const _gui = RpgGui.get("market");
+      if (_gui && !_gui.display) {
+        await promptPlayer(player, "AT_MARKET", "Want to evaluate this item?");
+        return;
+      }
     }
 
     if (input === Control.Action && player.getVariable("AT_GALLERY")) {
-      await promptPlayer(player, "AT_GALLERY", "Want to view this item?");
+      const _gui = RpgGui.get("gallery");
+      if (_gui && !_gui.display) {
+        await promptPlayer(player, "AT_GALLERY", "Want to view this item?");
+        return;
+      }
     }
 
     if (input === Control.Action && player.getVariable("AT_COMPUTER")) {
-      await promptPlayer(player, "AT_COMPUTER", "Want to access this computer?");
+      const _gui = RpgGui.get("computer");
+      if (_gui && !_gui.display) {
+        await promptPlayer(player, "AT_COMPUTER", "Want to access this computer?");
+        return;
+      }
     }
 
     if (input === Control.Action && player.getVariable("AT_MESSAGE")) {

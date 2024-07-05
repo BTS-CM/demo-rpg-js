@@ -27,6 +27,8 @@ export default defineComponent({
     const open = ref(true);
     const current_nft = ref(0);
 
+    const rpgGuiClose = inject("rpgGuiClose");
+
     const about = ref(false);
     const buy = ref(false);
     const explore = ref(false);
@@ -188,13 +190,9 @@ export default defineComponent({
       }
     });
 
-    const mainImage = computed(() => {
-      return `/main/spritesheets/gfx/NFT/${symbol.value}/0_256x256.${filetype.value}`;
-    });
-
     const spriteURL = computed(() => {
       if (!symbol.value) return null;
-      const sprite = RpgResource.spritesheets.get(symbol.value);
+      const sprite = RpgResource.spritesheets.get(`${symbol.value}_256`);
       return sprite.image ?? null;
     });
 
@@ -218,10 +216,20 @@ export default defineComponent({
       };
     });
 
+    async function closeGUI() {
+      try {
+        await rpgGuiClose('gallery');
+      } catch (error) {
+        console.error(error);
+      }
+      
+      open.value = false;
+    }
 
     return {
       // Dialog open states:
       open,
+      closeGUI,
       beeteos,
       broadcast,
       about,
@@ -240,7 +248,6 @@ export default defineComponent({
       quotePrecision,
       quoteAssetID,
       // generated urls
-      mainImage,
       spriteURL,
       tileStyle,
       // NFT Properties:
@@ -267,8 +274,10 @@ export default defineComponent({
       :open="open"
       :label="`Viewing '${header}' created by ${artist}`"
       class="dialog-overview"
+      @sl-request-close="closeGUI"
+      @keydown.esc.prevent.stop="closeGUI"
     >
-      <div v-if="filetype && media_qty">
+      <div v-if="media_qty">
         <div
           class="microGrid"
           style="
@@ -303,9 +312,6 @@ export default defineComponent({
             >Next</sl-button
           >
         </div>
-      </div>
-      <div v-else style="display: flex; justify-content: center; align-items: center; height: 100%">
-        <img :src="mainImage" alt="NFT media" />
       </div>
       <div class="grid">
         <sl-button
@@ -463,7 +469,7 @@ export default defineComponent({
     </sl-dialog>
 
     <sl-dialog :open="broadcast">
-      <p v-if="chainResult">
+      <p v-if="chainResult && chainresults.asks.length">
         Buying {{ chainResult.asks[0].quote }} {{ chainResult.quote }} from
         {{ chainResult.asks[0].owner_name }} for {{ chainResult.asks[0].base }}
         {{ chainResult.base }}

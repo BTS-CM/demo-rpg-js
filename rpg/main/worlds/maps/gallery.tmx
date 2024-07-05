@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="119">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="120">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
  <tileset firstgid="1065" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="2353" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="3793" source="../../spritesheets/gallery.tsx"/>
- <tileset firstgid="4049" source="../../spritesheets/NFT/NFTEA.AGREEMENT.tsx"/>
- <tileset firstgid="4073" source="../../spritesheets/NFT/NFTEA.AIR.tsx"/>
- <tileset firstgid="4097" source="../../spritesheets/NFT/NFTEA.AMOUNT.tsx"/>
- <tileset firstgid="4121" source="../../spritesheets/NFT/NFTEA.APPROVAL.tsx"/>
- <tileset firstgid="4145" source="../../spritesheets/NFT/NFTEA.ART.tsx"/>
- <tileset firstgid="4161" source="../../spritesheets/NFT/NFTEA.ATTACKA.tsx"/>
- <tileset firstgid="4177" source="../../spritesheets/NFT/NFTEA.ATTACKB.tsx"/>
- <tileset firstgid="4193" source="../../spritesheets/NFT/NFTEA.ATTENTION.tsx"/>
- <tileset firstgid="4209" source="../../spritesheets/NFT/NFTEA.ATTRACTION.tsx"/>
- <tileset firstgid="4225" source="../../spritesheets/NFT/NFTEA.BALANCE.tsx"/>
- <tileset firstgid="4241" source="../../spritesheets/NFT/NFTEA.BELIEF.tsx"/>
- <tileset firstgid="4257" source="../../spritesheets/NFT/NFTEA.BIT.tsx"/>
- <tileset firstgid="4273" source="../../spritesheets/NFT/NFTEA.BLOW.tsx"/>
- <tileset firstgid="4289" source="../../spritesheets/NFT/NFTEA.BURST.tsx"/>
- <tileset firstgid="4305" source="../../spritesheets/NFT/NFTEA.CARE.tsx"/>
- <tileset firstgid="4337" source="../../spritesheets/NFT/NFTEA.CAUSE.tsx"/>
- <tileset firstgid="4353" source="../../spritesheets/NFT/NFTEA.CHANCE.tsx"/>
- <tileset firstgid="4385" source="../../spritesheets/NFT/NFTEA.CHANGE.tsx"/>
- <tileset firstgid="4401" source="../../spritesheets/NFT/NFTEA.COLOUR.tsx"/>
- <tileset firstgid="4425" source="../../spritesheets/NFT/NFTEA.COMFORT.tsx"/>
- <tileset firstgid="4449" source="../../spritesheets/NFT/NFTEA.COMPARISON.tsx"/>
- <tileset firstgid="4465" source="../../spritesheets/NFT/NFTEA.COMPETE.tsx"/>
- <tileset firstgid="4481" source="../../spritesheets/NFT/NFTEA.CONNECTION.tsx"/>
- <tileset firstgid="4505" source="../../spritesheets/NFT/NFTEA.CONTROL.tsx"/>
- <tileset firstgid="4521" source="../../spritesheets/NFT/NFTEA.COPY.tsx"/>
- <tileset firstgid="4537" source="../../spritesheets/NFT/NFTEA.COPYB.tsx"/>
- <tileset firstgid="4553" source="../../spritesheets/NFT/NFTEA.CRACK.tsx"/>
- <tileset firstgid="4577" source="../../spritesheets/NFT/NFTEA.CREDIT.tsx"/>
- <tileset firstgid="4593" source="../../spritesheets/NFT/NFTEA.CRIME.tsx"/>
- <tileset firstgid="4609" source="../../spritesheets/NFT/NFTEA.CRUSH.tsx"/>
- <tileset firstgid="4625" source="../../spritesheets/NFT/NFTEA.CURRENT.tsx"/>
- <tileset firstgid="4641" source="../../spritesheets/NFT/NFTEA.DAMAGE.tsx"/>
- <tileset firstgid="4657" source="../../spritesheets/NFT/NFTEA.DAY.tsx"/>
- <tileset firstgid="4673" source="../../spritesheets/NFT/NFTEA.DEATH.tsx"/>
- <tileset firstgid="4697" source="../../spritesheets/NFT/NFTEA.DESIGN.tsx"/>
- <tileset firstgid="4721" source="../../spritesheets/NFT/NFTEA.DETAIL.tsx"/>
- <tileset firstgid="4753" source="../../spritesheets/NFT/NFTEA.DEV.tsx"/>
- <tileset firstgid="4769" source="../../spritesheets/NFT/NFTEA.DIRECTION.tsx"/>
- <tileset firstgid="4793" source="../../spritesheets/NFT/NFTEA.DISCOVERY.tsx"/>
- <tileset firstgid="4817" source="../../spritesheets/NFT/NFTEA.FIRE.tsx"/>
- <tileset firstgid="4841" source="../../spritesheets/NFT/NFTEA.HOME.tsx"/>
- <tileset firstgid="4857" source="../../spritesheets/NFT/NFTEA.ISOMETRIC.tsx"/>
- <tileset firstgid="4865" source="../../spritesheets/NFT/NFTEA.METROPOLIS.tsx"/>
- <tileset firstgid="4873" source="../../spritesheets/NFT/NFTEA.MOUNTAINS.tsx"/>
- <tileset firstgid="4881" source="../../spritesheets/NFT/NFTEA.ORBS.tsx"/>
- <tileset firstgid="4921" source="../../spritesheets/NFT/NFTEA.POWER.tsx"/>
+ <tileset firstgid="4049" source="../../spritesheets/NFT/NFTEA.AGREEMENT_256.tsx"/>
+ <tileset firstgid="4073" source="../../spritesheets/NFT/NFTEA.AIR_256.tsx"/>
+ <tileset firstgid="4094" source="../../spritesheets/NFT/NFTEA.AMOUNT_256.tsx"/>
+ <tileset firstgid="4114" source="../../spritesheets/NFT/NFTEA.APPROVAL_256.tsx"/>
+ <tileset firstgid="4135" source="../../spritesheets/NFT/NFTEA.ART_256.tsx"/>
+ <tileset firstgid="4146" source="../../spritesheets/NFT/NFTEA.ATTACKA_256.tsx"/>
+ <tileset firstgid="4157" source="../../spritesheets/NFT/NFTEA.ATTACKB_256.tsx"/>
+ <tileset firstgid="4167" source="../../spritesheets/NFT/NFTEA.ATTENTION_256.tsx"/>
+ <tileset firstgid="4183" source="../../spritesheets/NFT/NFTEA.ATTRACTION_256.tsx"/>
+ <tileset firstgid="4194" source="../../spritesheets/NFT/NFTEA.BALANCE_256.tsx"/>
+ <tileset firstgid="4208" source="../../spritesheets/NFT/NFTEA.BELIEF_256.tsx"/>
+ <tileset firstgid="4219" source="../../spritesheets/NFT/NFTEA.BIT_256.tsx"/>
+ <tileset firstgid="4233" source="../../spritesheets/NFT/NFTEA.BLOW_256.tsx"/>
+ <tileset firstgid="4245" source="../../spritesheets/NFT/NFTEA.BURST_256.tsx"/>
+ <tileset firstgid="4257" source="../../spritesheets/NFT/NFTEA.CARE_256.tsx"/>
+ <tileset firstgid="4289" source="../../spritesheets/NFT/NFTEA.CAUSE_256.tsx"/>
+ <tileset firstgid="4304" source="../../spritesheets/NFT/NFTEA.CHANCE_256.tsx"/>
+ <tileset firstgid="4329" source="../../spritesheets/NFT/NFTEA.CHANGE_256.tsx"/>
+ <tileset firstgid="4341" source="../../spritesheets/NFT/NFTEA.COLOUR_256.tsx"/>
+ <tileset firstgid="4358" source="../../spritesheets/NFT/NFTEA.COMFORT_256.tsx"/>
+ <tileset firstgid="4378" source="../../spritesheets/NFT/NFTEA.COMPARISON_256.tsx"/>
+ <tileset firstgid="4391" source="../../spritesheets/NFT/NFTEA.CONNECTION_256.tsx"/>
+ <tileset firstgid="4408" source="../../spritesheets/NFT/NFTEA.COMPETE_256.tsx"/>
+ <tileset firstgid="4419" source="../../spritesheets/NFT/NFTEA.CONTROL_256.tsx"/>
+ <tileset firstgid="4431" source="../../spritesheets/NFT/NFTEA.COPY_256.tsx"/>
+ <tileset firstgid="4442" source="../../spritesheets/NFT/NFTEA.COPYB_256.tsx"/>
+ <tileset firstgid="4455" source="../../spritesheets/NFT/NFTEA.CRACK_256.tsx"/>
+ <tileset firstgid="4475" source="../../spritesheets/NFT/NFTEA.CREDIT_256.tsx"/>
+ <tileset firstgid="4486" source="../../spritesheets/NFT/NFTEA.CRIME_256.tsx"/>
+ <tileset firstgid="4498" source="../../spritesheets/NFT/NFTEA.CRUSH_256.tsx"/>
+ <tileset firstgid="4510" source="../../spritesheets/NFT/NFTEA.CURRENT_256.tsx"/>
+ <tileset firstgid="4519" source="../../spritesheets/NFT/NFTEA.DAMAGE_256.tsx"/>
+ <tileset firstgid="4533" source="../../spritesheets/NFT/NFTEA.DAY_256.tsx"/>
+ <tileset firstgid="4546" source="../../spritesheets/NFT/NFTEA.DEATH_256.tsx"/>
+ <tileset firstgid="4564" source="../../spritesheets/NFT/NFTEA.DESIGN_256.tsx"/>
+ <tileset firstgid="4587" source="../../spritesheets/NFT/NFTEA.DETAIL_256.tsx"/>
+ <tileset firstgid="4614" source="../../spritesheets/NFT/NFTEA.DIRECTION_256.tsx"/>
+ <tileset firstgid="4637" source="../../spritesheets/NFT/NFTEA.DEV_256.tsx"/>
+ <tileset firstgid="4649" source="../../spritesheets/NFT/NFTEA.DISCOVERY_256.tsx"/>
+ <tileset firstgid="4667" source="../../spritesheets/NFT/NFTEA.FIRE_256.tsx"/>
+ <tileset firstgid="4688" source="../../spritesheets/NFT/NFTEA.HOME_256.tsx"/>
+ <tileset firstgid="4701" source="../../spritesheets/NFT/NFTEA.ISOMETRIC_256.tsx"/>
+ <tileset firstgid="4707" source="../../spritesheets/NFT/NFTEA.METROPOLIS_256.tsx"/>
+ <tileset firstgid="4708" source="../../spritesheets/NFT/NFTEA.MOUNTAINS_256.tsx"/>
+ <tileset firstgid="4709" source="../../spritesheets/NFT/NFTEA.ORBS_256.tsx"/>
+ <tileset firstgid="4743" source="../../spritesheets/NFT/NFTEA.POWER_256.tsx"/>
  <layer id="1" name="Tile Layer 1" width="25" height="25">
   <properties>
    <property name="z" type="int" value="0"/>
@@ -59,23 +59,23 @@
 1610613090,373,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,381,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,337,338,339,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,337,338,339,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,337,338,339,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,345,346,347,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
-1610613090,291,291,291,291,291,291,365,362,362,362,362,362,362,362,362,362,362,362,362,362,362,362,363,527,
+1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
 1610613090,291,291,291,291,291,291,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,370,2684354914,
 1610613090,291,291,291,291,291,291,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,378,2684354914,
 1610613090,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,291,2684354914,
@@ -88,23 +88,23 @@
 0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2147485393,0,
-0,1745,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,0,
+0,1745,0,0,0,0,0,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,0,
 0,1745,0,0,0,0,0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,3221227217,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2147485393,0,
-0,1745,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,0,
+0,1745,0,0,0,0,0,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,0,
 0,1745,0,0,0,0,0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,3221227217,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2147485393,0,
-0,1745,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,0,
+0,1745,0,0,0,0,0,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,0,
 0,1745,0,0,0,0,0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,3221227217,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,329,0,331,0,0,0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2147485393,0,
-0,1745,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,0,
+0,1745,0,0,0,0,0,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,0,
 0,1745,0,0,0,0,0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,3221227217,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,302,0,0,0,0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2147485393,0,
-0,1745,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,0,
+0,1745,0,0,0,0,0,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,1073742199,0,
 0,1745,0,0,0,0,0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,3221227217,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147485393,0,
 0,1745,0,0,0,0,0,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,2684356305,0,
@@ -117,23 +117,23 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,296,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,304,0,1610614481,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356305,0,
-0,0,1610614481,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1610614481,677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221227217,0,
 0,678,679,695,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,519,519,519,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356305,0,
-0,0,725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221227217,0,
 0,725,717,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,725,717,725,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356305,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221227217,0,
 0,725,717,0,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,725,0,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,1745,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2684356305,0,
-0,0,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,330,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221227217,0,
 0,0,330,0,0,0,912,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,330,0,0,0,920,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3221227217,0,
 0,0,231,232,0,0,928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,239,240,0,0,936,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3758098129,3221227217,0,
@@ -153,7 +153,7 @@
    <properties>
     <property name="destination" value="map"/>
     <property name="x" type="int" value="592"/>
-    <property name="y" type="int" value="378"/>
+    <property name="y" type="int" value="920"/>
    </properties>
   </object>
   <object id="19" name="collision-0006" x="26.25" y="768" width="110" height="7.33333">
@@ -1108,6 +1108,11 @@
   <object id="118" name="teleport1" x="45.625" y="517.75" width="67.75" height="41.8333">
    <properties>
     <property name="destination" value="gallery-upstairs"/>
+   </properties>
+  </object>
+  <object id="119" name="collision-0100" x="67.5" y="702.333" width="57" height="27.8333">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
    </properties>
   </object>
  </objectgroup>

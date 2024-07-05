@@ -1,6 +1,6 @@
 <script>
 import { defineComponent, computed, watchEffect, ref, onMounted, inject } from "vue";
-import { RpgResource } from '@rpgjs/client'
+import { RpgResource } from '@rpgjs/client';
 
 import {
   //type User,
@@ -23,7 +23,7 @@ export default defineComponent({
 
     const spriteType = ref("male");
     const spriteValue = ref(0);
-    
+
     onMounted(() => {
       const user = $currentUser.get();
       const currentSprite = user.sprite;

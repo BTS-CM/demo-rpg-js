@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="44">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="15" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="44">
  <tileset firstgid="1" source="[Base]BaseChip_pipo.tsx"/>
  <tileset firstgid="1065" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="2353" source="../../spritesheets/Overworld.tsx"/>
@@ -67,8 +67,8 @@
   <object id="6" name="teleport1" x="128.625" y="464.083" width="63.4167" height="15.1667">
    <properties>
     <property name="destination" value="map"/>
-    <property name="x" type="int" value="273"/>
-    <property name="y" type="int" value="378"/>
+    <property name="x" type="int" value="295"/>
+    <property name="y" type="int" value="920"/>
    </properties>
   </object>
   <object id="7" name="teleport2" x="31.9583" y="95.75" width="32.0834" height="15.8333">
@@ -115,36 +115,66 @@
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="cheese"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="1128"/>
+    <property name="y" type="int" value="3904"/>
    </properties>
   </object>
   <object id="18" name="market_02" x="253.75" y="220.875" width="36.3485" height="38.6364">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="ale"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="128"/>
+    <property name="y" type="int" value="3872"/>
    </properties>
   </object>
   <object id="19" name="market_03" x="317.315" y="221.091" width="37.3901" height="38.5114">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="ham"/>
+    <property name="max_x" type="int" value="224"/>
+    <property name="max_y" type="int" value="3904"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="32"/>
+    <property name="y" type="int" value="3936"/>
    </properties>
   </object>
   <object id="20" name="market_04" x="189.502" y="156.795" width="37" height="39.5">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="potion"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="32"/>
+    <property name="y" type="int" value="3936"/>
    </properties>
   </object>
   <object id="21" name="market_05" x="252.657" y="156.613" width="38.144" height="40">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="pearl"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="96"/>
+    <property name="y" type="int" value="3936"/>
    </properties>
   </object>
   <object id="22" name="market_06" x="316.968" y="156.704" width="38.2651" height="40.4546">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="book"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="0"/>
+    <property name="y" type="int" value="3808"/>
    </properties>
   </object>
   <object id="23" name="collision-0008" x="192.833" y="288.375" width="31" height="25.25">
@@ -221,18 +251,33 @@
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="teleportScroll"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="0"/>
+    <property name="y" type="int" value="3904"/>
    </properties>
   </object>
   <object id="40" name="market_08" x="252.867" y="284.106" width="38.2651" height="40.4546">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="lootBox"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="0"/>
+    <property name="y" type="int" value="3968"/>
    </properties>
   </object>
   <object id="41" name="market_09" x="317.322" y="284.803" width="38.2651" height="40.4546">
    <properties>
     <property name="component" value="market"/>
     <property name="item" value="lootSack"/>
+    <property name="max_x" type="int" value="256"/>
+    <property name="max_y" type="int" value="4256"/>
+    <property name="spritesheet" value="base_pipo"/>
+    <property name="x" type="int" value="64"/>
+    <property name="y" type="int" value="3936"/>
    </properties>
   </object>
   <object id="43" name="npc" x="112.667" y="184.667">

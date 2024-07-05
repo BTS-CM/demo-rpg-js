@@ -9,7 +9,7 @@ const directories = filesAndFolders.filter((file) =>
 );
 
 const newImageWidth = 512;
-const largeImageWidth = 2048
+let largeImageWidth = 9984;
 
 directories.forEach(async (directory) => {
   const files = fs.readdirSync(path.join(__dirname, directory));
@@ -63,8 +63,13 @@ directories.forEach(async (directory) => {
 });
 
 directories.forEach(async (directory) => {
+  if (directory.includes("node_modules")) {
+    return;
+  }
   const files = fs.readdirSync(path.join(__dirname, directory));
-  const imageFiles = files.filter((file) => file.includes("_256x256"));
+  const imageFiles = files.filter((file) => file.endsWith(".webp") && file.includes("_256x256"));
+
+  console.log({imageFiles, directory})
 
   // Sort the files by number
   imageFiles.sort((a, b) => {
@@ -73,7 +78,9 @@ directories.forEach(async (directory) => {
     return numberA - numberB;
   });
 
-  const numRows = Math.ceil(imageFiles.length / (largeImageWidth / 256));
+  const numRows = (imageFiles.length * 256) < largeImageWidth
+                    ? 1
+                    : Math.ceil(imageFiles.length / (largeImageWidth / 256));
   let newImageHeight = numRows * 256;
   newImageHeight = Math.max(newImageHeight, 1);
 
@@ -83,9 +90,11 @@ directories.forEach(async (directory) => {
     )
   );
 
+  const finalWidth = numRows === 1 ? imageFiles.length * 256 : largeImageWidth;
+  console.log(`finalWidth: ${finalWidth}, newImageHeight: ${newImageHeight}, numRows: ${numRows}, imageFiles.length: ${imageFiles.length}`);
   sharp({
     create: {
-      width: largeImageWidth,
+      width: finalWidth,
       height: newImageHeight,
       channels: 4,
       background: { r: 0, g: 0, b: 0, alpha: 0 },
@@ -94,12 +103,12 @@ directories.forEach(async (directory) => {
     .composite(
       images.map((image, i) => ({
         input: image,
-        top: Math.floor(i / (largeImageWidth / 256)) * 256,
-        left: (i % (largeImageWidth / 256)) * 256,
+        top: Math.floor(i / (finalWidth / 256)) * 256,
+        left: (i % (finalWidth / 256)) * 256,
       }))
     )
-    // Save the tileset in the respective folder
-    .toFile(path.join(__dirname, directory, `${directory}_256.png`), (err, info) => {
+    .jpeg({ quality: 80 })
+    .toFile(path.join(__dirname, directory, `${directory}_256.jpeg`), (err, info) => {
       if (err) throw err;
       console.log(info);
     });

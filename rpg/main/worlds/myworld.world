@@ -2,7 +2,7 @@
     "maps": [
         {
             "fileName": "maps/map.tmx",
-            "height": 800,
+            "height": 1344,
             "width": 1024,
             "x": 2752,
             "y": -64
@@ -25,15 +25,15 @@
             "fileName": "maps/shop-4.tmx",
             "height": 320,
             "width": 1152,
-            "x": 2272,
-            "y": 1408
+            "x": 2240,
+            "y": 1952
         },
         {
             "fileName": "maps/corridor.tmx",
             "height": 608,
             "width": 160,
-            "x": 3264,
-            "y": 768
+            "x": 3232,
+            "y": 1312
         },
         {
             "fileName": "maps/gallery.tmx",
@@ -65,7 +65,7 @@
         },
         {
             "fileName": "maps/jail.tmx",
-            "height": 352,
+            "height": 448,
             "width": 192,
             "x": 4032,
             "y": -416

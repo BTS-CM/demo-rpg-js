@@ -15,7 +15,6 @@ import LootSack from '../database/lootSack';
 })
 export default class CharaEvent extends RpgEvent {
     onInit() {
-        console.log({npc: this.properties})
         this.setGraphic(this.properties.sprite ?? "female-1")
     }
 
