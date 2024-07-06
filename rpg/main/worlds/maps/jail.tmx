@@ -104,7 +104,7 @@
     <property name="y" type="int" value="550"/>
    </properties>
   </object>
-  <object id="10" name="wall-004" x="-0.625" y="347.127" width="192.75" height="4.74667">
+  <object id="10" name="wall-004" x="-0.625" y="321.127" width="192.75" height="30.7467">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>

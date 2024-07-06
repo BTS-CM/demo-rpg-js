@@ -17,7 +17,7 @@
     "@nanostores/vue": "^0.10.0",
     "@rpgjs/client": "4.3.0",
     "@rpgjs/gamepad": "^4.3.0",
-    "@rpgjs/default-gui": "git@github.com:BTS-CM/rpgjs-gui.git#50d77a654f1e0bacc08f53ff3fe6d3c652715dd1",
+    "@rpgjs/default-gui": "git@github.com:BTS-CM/rpgjs-gui.git#04f0e27318fb020834bc7a7660026d003f0e5fa6",
     "@rpgjs/mobile-gui": "^4.3.0",
     "@rpgjs/server": "^4.3.0",
     "@rpgjs/standalone": "4.3.0",

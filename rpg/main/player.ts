@@ -204,7 +204,7 @@ const player: RpgPlayerHooks = {
       return;
     }
 
-    await player.gui("intro").open({}, {waitingAction: true, blockPlayerInput: true});
+    await player.gui("intro").open({player}, {waitingAction: true, blockPlayerInput: true});
 
     const usr = $currentUser.get();
 

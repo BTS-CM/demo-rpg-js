@@ -1,7 +1,13 @@
 <script>
+import { RpgPlayer } from '@rpgjs/server'
 import { defineComponent, computed, watchEffect, ref, onMounted, inject, defineProps, toRaw } from "vue";
 import { useStore } from "@nanostores/vue";
 import { RpgResource } from '@rpgjs/client'
+
+import * as hash from "../bts/ecc/hash.js";
+
+import { createBlockedAccountStore } from "../nanoeffects/bitshares/BlockedAccounts" 
+import { createUserSearchStore } from "../nanoeffects/bitshares/UserSearch";
 
 import {
   //type User,
@@ -10,8 +16,7 @@ import {
   $userStorage,
   removeUser,
 } from "../nanostores/users.ts";
-
-import { createUserSearchStore } from "../nanoeffects/bitshares/UserSearch";
+import { $blockList, updateBlockList } from "../nanostores/blocklist.ts";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -21,7 +26,13 @@ import "@shoelace-style/shoelace/dist/components/radio-button/radio-button.js";
 
 export default defineComponent({
   name: "intro",
-  setup() {
+  props: {
+    player: {
+      type: RpgPlayer,
+      default: null,
+    }
+  },
+  setup(props) {
     const open = ref(true);
    
     const rpgGuiClose = inject("rpgGuiClose");
@@ -37,6 +48,10 @@ export default defineComponent({
     const spriteType = ref("male");
     const spriteValue = ref(0);
     
+    const player = computed(() => {
+      return props.player;
+    });
+
     const spriteTypeQty = computed(() => {
       if (spriteType.value === "male") {
         return 74;
@@ -111,6 +126,40 @@ export default defineComponent({
       open.value = false;
     }
 
+    onMounted(() => {
+      const _blockList = $blockList.get();
+      if (!_blockList.users.length) {
+        console.log("Fetching block list..")
+        const blockListStore = createBlockedAccountStore(["bitshares"]);
+
+        const unsub = blockListStore.subscribe((result) => {
+          if (result.error) {
+            console.error(result.error);
+          }
+
+          if (!result.loading && result.data) {
+            console.log({result: result.data})
+            updateBlockList(result.data);
+          }
+        });
+
+        return () => {
+          unsub();
+        };
+      }
+    });
+
+    async function checkBlocked(id) {
+      const _id = hash.sha256(id).toString("hex");
+      const _blockList = $blockList.get();
+      if (_blockList.users.includes(_id)) {
+        console.log("You're banned from using this app!");
+        player.value.items = [];
+        player.value.gold = 0;
+        player.value.changeMap("jail");
+      }
+    }
+
     return {
       // basic dialog functionality
       open,
@@ -123,6 +172,7 @@ export default defineComponent({
       // mode and storage
       method,
       storedUsers,
+      checkBlocked,
       // account search functionality
       inputText,
       inProgress,
@@ -151,8 +201,8 @@ export default defineComponent({
       <div v-if="!chain">
         <p>Please select the blockchain you want to use.</p>
         <div class="smallGrid">
-          <sl-button slot="footer" variant="primary" @click="chain = 'bitshares'"
-            >Bitshares
+          <sl-button slot="footer" variant="primary" @click="chain = 'bitshares'">
+            Bitshares
           </sl-button>
           <sl-button slot="footer" variant="neutral" @click="chain = 'bitshares_testnet'">
             Bitshares testnet
@@ -176,7 +226,9 @@ export default defineComponent({
           <sl-button slot="footer" variant="neutral" @click="method = 'existing'">
             Previously used accounts
           </sl-button>
-          <sl-button slot="footer" variant="neutral" @click="chain = null">Back</sl-button>
+          <sl-button slot="footer" variant="neutral" @click="chain = null">
+            Back
+          </sl-button>
         </div>
       </div>
 
@@ -201,7 +253,13 @@ export default defineComponent({
 
         <div class="smallGrid">
           <sl-button slot="footer" variant="primary" @click="search">Search</sl-button>
-          <sl-button slot="footer" variant="neutral" @click="method = null; searchResult = null; searchError = null;">Back</sl-button>
+          <sl-button
+            slot="footer"
+            variant="neutral"
+            @click="method = null; searchResult = null; searchError = null;"
+          >
+            Back
+          </sl-button>
         </div>
         <sl-divider v-if="searchResult"></sl-divider>
       </div>
@@ -247,6 +305,7 @@ export default defineComponent({
               <sl-button
                 variant="default"
                 @click="
+                  checkBlocked(user.id);
                   setCurrentUser(user.username, user.id, user.referrer, user.sprite, chain);
                   closeGUI();
                 "
