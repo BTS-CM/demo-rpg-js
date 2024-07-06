@@ -289,9 +289,7 @@ export default defineComponent({
           "
         >
           <a :href="`https://gateway.pinata.cloud/ipfs/${CID}`" target="_blank">
-            <div class="magnify">
-              <div class="tile" :id="`nft_${current_nft}_${symbol}`" :style="tileStyle"></div>
-            </div>
+            <div class="tile" :id="`nft_${current_nft}_${symbol}`" :style="tileStyle"></div>
           </a>
           <p>{{ current_nft + 1 }} of {{ media_qty }}</p>
         </div>
@@ -509,11 +507,6 @@ export default defineComponent({
 <style>
 .tile {
   display: inline-block;
-}
-.magnify {
-  transform: scale(1.171875); /* 300 / 256 = 1.171875 */
-  transform-origin: center; /* Adjust as needed */
-  display: inline-block; /* Or as per your layout requirements */
 }
 .grid {
   display: grid;
