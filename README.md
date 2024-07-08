@@ -1,26 +1,54 @@
-# demo-rpg-js
+# RPG JS Game
 
-An [RPG-JS](https://rpgjs.dev/) framework based 'game' demonstrating the following:
-* An interactive NFT gallery (NFTEA Gallery)
-* Interacting with multiple blockchains (Bitshares and EOS)
-* Launching custom GUIs (Gallery, computers, shops)
-* Interacting with Tiled shapes & events
-* Teleporting between maps
-* Basic RPG-JS player mechanics
-* Automated tileset generation
+This is a [RPGJS](https://rpgjs.dev) framework based demo app. It was based on the starter template: https://github.com/rpgjs/starter.
 
-This project is MIT licensed, the tilesets used are creative commons zero based game assets, however the NFTEA NFTs have their own licensing rights.
+## Get started
 
----
+Install the dependencies:
 
-Dev blog posts:
+```bash
+bun install
+```
 
-https://hive.blog/hive-120117/@nftea.gallery/next-project-working-with-rpg-js-on-a-beeteos-tech-demo
+Create a `.env` file in this folder, containing `RPG_TYPE=rpg`
 
-https://hive.blog/development/@nftea.gallery/rpg-js-tutorial-teleporting-the-user-to-another-map
+Run the project:
 
-https://hive.blog/guide/@nftea.gallery/rpg-js-tutorial-implementing-collisions-via-both-tiles-and-shapes
+```bash
+bun run dev
+```
 
-https://hive.blog/hive-120117/@nftea.gallery/rpg-js-tutorial-adding-an-intro-gui-screen-for-selecting-a-bitshares-account
+Navigate to [localhost:3000](http://localhost:3000). You should see the game running.
 
-https://hive.blog/hive-120117/@nftea.gallery/rpg-js-tutorial-how-to-create-a-bitshares-based-nft-gallery-in-an-rpg
+## Production
+
+### Build with NodeJS
+
+Add the following to your `.env` file:
+
+`NODE_ENV=production`
+
+Then run the following command:
+
+`bun run build`
+
+## Resources
+
+[Documentation](https://docs.rpgjs.dev)
+[Community Help](https://community.rpgjs.dev)
+[Tiled forum](https://discourse.mapeditor.org/latest)
+
+## Credits for Sample package assets
+
+### Sounds
+
+[Davidvitas](https://www.davidvitas.com/portfolio/2016/5/12/rpg-music-pack)
+Attribution 4.0 International (CC BY 4.0)- https://creativecommons.org/licenses/by/4.0/deed.en
+
+### Graphics
+
+[Pipoya](https://pipoya.itch.io)
+
+### Icons
+
+https://game-icons.net

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="32" height="42" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="49">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="32" height="42" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="56">
  <tileset firstgid="1" source="../../spritesheets/slates.tsx"/>
  <tileset firstgid="1289" source="../../spritesheets/Overworld.tsx"/>
  <tileset firstgid="2729" source="[Base]BaseChip_pipo.tsx"/>
@@ -153,6 +153,36 @@
    </properties>
   </object>
   <object id="48" name="wall-0051" x="886.5" y="705.583" width="8" height="189.833">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="50" name="wall-0060" x="160" y="225.75" width="479" height="146.5">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="51" name="wall-0061" x="221.5" y="372.75" width="99" height="42.1667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="52" name="wall-0062" x="351.167" y="373.583" width="99" height="42.1667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="53" name="wall-0063" x="479.833" y="372.917" width="99" height="42.1667">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="54" name="wall-0064" x="160.167" y="371.917" width="32.6667" height="43.8334">
+   <properties>
+    <property name="collision" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="55" name="wall-0065" x="606.667" y="372.083" width="32.6667" height="43.8334">
    <properties>
     <property name="collision" type="bool" value="true"/>
    </properties>

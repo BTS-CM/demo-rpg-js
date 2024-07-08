@@ -6,11 +6,18 @@ import { playerGold } from "./common/player";
 
 import items from "./assets";
 
-const _allowedVariables = ["AT_COMPUTER", "AT_MARKET", "AFTER_INTRO", "AT_GALLERY"];
+const _allowedVariables = [
+  "AT_COMPUTER",
+  "AT_EOS",
+  "AT_MARKET",
+  "AFTER_INTRO",
+  "AT_GALLERY"
+];
+
 const _allowedComponents = [
   "bts-computer",
   "computer",
-  "eos-computer",
+  "eos",
   "player-computer",
   "market",
   "gallery",
@@ -90,6 +97,14 @@ const player: RpgPlayerHooks = {
       const _gui = RpgGui.get("gallery");
       if (_gui && !_gui.display) {
         await promptPlayer(player, "AT_GALLERY", "Want to view this item?");
+        return;
+      }
+    }
+
+    if (input === Control.Action && player.getVariable("AT_EOS")) {
+      const _gui = RpgGui.get("eos");
+      if (_gui && !_gui.display) {
+        await promptPlayer(player, "AT_EOS", "Want to access this EOS terminal?");
         return;
       }
     }
@@ -185,6 +200,12 @@ const player: RpgPlayerHooks = {
       player.gui(shape.obj.properties.component).close();
       player.hideAttachedGui();
       player.setVariable("AT_COMPUTER", null);
+    }
+    if (shape.name.includes("eos")) {
+      player.name = " ";
+      player.gui(shape.obj.properties.component).close();
+      player.hideAttachedGui();
+      player.setVariable("AT_EOS", null);
     }
     if (shape.name.includes("market")) {
       player.name = " ";

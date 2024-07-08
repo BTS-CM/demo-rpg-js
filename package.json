@@ -1,5 +1,5 @@
 {
-  "name": "my-game",
+  "name": "rpgjs-demo",
   "scripts": {
     "rpgBuild": "rpgjs build",
     "rpgDev": "rpgjs dev",

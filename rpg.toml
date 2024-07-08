@@ -11,6 +11,9 @@ modules = [
 [compilerOptions.alias]
   "@" = "./main"
 
+[vite]
+    assetsInclude = "**/*.html"
+
 [start]
     map = 'map'
     hitbox = [16, 16]
