@@ -6,6 +6,7 @@
     "dev": "bun --env-file=.env run rpgDev",
     "electron": "cross-env RPG_TYPE=rpg npm run rpgDev",
     "build": "bun --env-file=.env run rpgBuild",
+    "static": "bun --env-file=.production run rpgBuild",
     "start": "node dist/server/main.mjs"
   },
   "engines": {

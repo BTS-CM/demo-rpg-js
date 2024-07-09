@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.10" tiledversion="1.11.0" name="NFTEA.METROPOLIS_256" tilewidth="256" tileheight="256" tilecount="1" columns="1">
+ <image source="../gfx/NFT/NFTEA.METROPOLIS/NFTEA.METROPOLIS_256.jpeg" width="256" height="256"/>
+</tileset>
