@@ -11,7 +11,7 @@
     "node": ">=14"
   },
   "dependencies": {
-    "@exodus/bytebuffer": "git@github.com:BTS-CM/bytebuffer.js.git",
+    "@exodus/bytebuffer": "git@github.com:BTS-CM/bytebuffer.js.git#393541bd29f988a2af6a7785b1ee4978881ed6bb",
     "@nanostores/persistent": "^0.10.1",
     "@nanostores/query": "^0.2.10",
     "@nanostores/vue": "^0.10.0",
