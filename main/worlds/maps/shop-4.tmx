@@ -82,8 +82,8 @@
    <properties>
     <property name="destination" value="map"/>
     <property name="direction" type="int" value="3"/>
-    <property name="x" type="int" value="113"/>
-    <property name="y" type="int" value="637"/>
+    <property name="x" type="int" value="105"/>
+    <property name="y" type="int" value="1175"/>
    </properties>
   </object>
   <object id="11" name="internal_door_1" x="165" y="75" width="21.5" height="19.5">
